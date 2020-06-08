@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "lib:build": "ng build garicons --watch=true",
+    "lib:package": "cd dist/garicons && npm pack"
   },
   "private": true,
   "dependencies": {

@@ -1,0 +1,114 @@
+.gcon-wrapper {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+svg {
+    overflow: visible;
+}
+
+$prime-color: #1e0035;
+// Rain
+
+#first-rain,
+#second-rain,
+#third-rain {
+    stroke-dasharray: 8px;
+    stroke-dashoffset: 8px;
+    stroke:currentColor;
+}
+
+.ani-rain-hover {
+    &:hover {
+        #rain-cloud {
+            animation-name: cloud-shake;
+            animation-delay: 0.2s;
+        }
+
+        #first-rain {
+
+            animation-name: rain-drop;
+            animation-delay: 0.3s;
+        }
+
+        #second-rain {
+            animation-name: rain-drop;
+            animation-delay: 0.1s;
+        }
+
+        #third-rain {
+            animation-name: rain-drop;
+            animation-delay: 0.4s;
+            
+        }
+    }
+}
+
+
+.ani-rain-onload {
+
+    #rain-cloud {
+        animation-name: cloud-shake;
+        animation-delay: 0.2s;
+    }
+
+    #first-rain {
+
+        animation-name: rain-drop;
+        animation-delay: 0.3s;
+    }
+
+    #second-rain {
+        animation-name: rain-drop;
+        animation-delay: 0.1s;
+    }
+
+    #third-rain {
+        animation-name: rain-drop;
+        animation-delay: 0.4s;
+    }
+
+}
+
+#rain-cloud,
+#first-rain,
+#second-rain,
+#third-rain {
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+
+// Rain
+@keyframes cloud-shake {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    25% {
+        transform: translate(0px, 1px);
+    }
+
+    50% {
+        transform: translate(0px, -1px);
+    }
+
+    75% {
+        transform: translate(0px, 1px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes rain-drop {
+    to {
+        stroke-dashoffset: -12px;
+    }
+}
