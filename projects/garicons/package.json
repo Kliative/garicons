@@ -7,5 +7,30 @@
   },
   "dependencies": {
     "tslib": "^1.10.0"
-  }
+  },
+  "description": "Open source animated SVG feather icons",
+  "main": "karma.conf.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kliative/garicons.git"
+  },
+  "keywords": [
+    "feather",
+    "icons",
+    "feather-icons",
+    "animated",
+    "css",
+    "svg",
+    "scss",
+    "angular"
+  ],
+  "author": "Tawanda Kanyangarara (@Kliative)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kliative/garicons/issues"
+  },
+  "homepage": "https://github.com/Kliative/garicons#readme"
 }
