@@ -1,0 +1,103 @@
+// Heavy rain
+#first-heavy-rain,
+#second-heavy-rain,
+#third-heavy-rain {
+    stroke-dasharray: 8px;
+    stroke-dashoffset: 12px;
+}
+
+.ani-heavyrain-hover {
+    &:hover {
+        #heavy-rain-cloud {
+            animation-name: heavy-cloud-shake;
+            animation-delay: 0.7s;
+        }
+
+        #first-heavy-rain {
+
+            animation-name: heavy-rain-drop;
+            animation-delay: 0.3s;
+        }
+
+        #second-heavy-rain {
+            animation-name: heavy-rain-drop;
+            animation-delay: 0.1s;
+        }
+
+        #third-heavy-rain {
+            animation-name: heavy-rain-drop;
+            animation-delay: 0.4s;
+        }
+
+    }
+}
+
+.ani-heavyrain-onload {
+    #heavy-rain-cloud {
+        animation-name: heavy-cloud-shake;
+        animation-delay: 0.7s;
+    }
+
+    #first-heavy-rain {
+
+        animation-name: heavy-rain-drop;
+        animation-delay: 0.3s;
+    }
+
+    #second-heavy-rain {
+        animation-name: heavy-rain-drop;
+        animation-delay: 0.1s;
+    }
+
+    #third-heavy-rain {
+        animation-name: heavy-rain-drop;
+        animation-delay: 0.4s;
+    }
+
+ 
+}
+
+#heavy-rain-cloud,
+#first-heavy-rain,
+#second-heavy-rain,
+#third-heavy-rain,
+#first-lightning-rain,
+#second-lightning-rain,
+#third-lightning-rain {
+    animation-duration: .8s;
+    animation-iteration-count: 2;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+// Heavy Rain
+
+@keyframes heavy-cloud-shake {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    25% {
+        transform: translate(0px, 2px);
+    }
+
+    50% {
+        transform: translate(-1.5px, -3px) scale(1.1);
+    }
+
+    75% {
+        transform: translate(0px, 2px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes heavy-rain-drop {
+    100% {
+        stroke-dashoffset: -20px;
+    }
+}

@@ -8,10 +8,22 @@
   "dependencies": {
     "tslib": "^1.10.0"
   },
+  "devDependencies": {
+    "ng-packagr": "^9.1.5"
+  },
   "description": "Open source animated SVG feather icons",
   "main": "karma.conf.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "npm run test",
+    "build": "ng-packagr -p package.json"
+  },
+  "ngPackage": {
+    "assets": [
+      "src/lib/asstets/global.scss"
+    ],
+    "lib": {
+      "entryFile": "src/public-api.ts"
+    }
   },
   "repository": {
     "type": "git",

@@ -1,22 +1,9 @@
-.gcon-wrapper {
-    position: relative;
-    display: block;
-    width: 100px;
-    height: 100px;
-}
-svg {
-    overflow: visible;
-}
-
-$prime-color: #1e0035;
-// Rain
 
 #first-rain,
 #second-rain,
 #third-rain {
     stroke-dasharray: 8px;
-    stroke-dashoffset: 8px;
-    stroke:currentColor;
+    stroke-dashoffset: 12px;
 }
 
 .ani-rain-hover {
