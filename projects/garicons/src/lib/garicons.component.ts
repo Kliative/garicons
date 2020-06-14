@@ -1,14 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'gi-garicons',
-  template: `
-    <p>
-      garicons works!
-    </p>
-  `,
-  styles: [
-  ]
+  template: ` `,
+  encapsulation: ViewEncapsulation.None,
+  styleUrls: ['garicons.component.scss']
 })
 export class GariconsComponent implements OnInit {
 

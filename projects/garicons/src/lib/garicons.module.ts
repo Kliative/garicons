@@ -1,17 +1,24 @@
 import { NgModule } from '@angular/core';
-
-
-import { GariconsComponent } from '../public-api';
-import { RainComponent } from './rain/rain.component';
 import { BrowserModule } from '@angular/platform-browser';
-
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GariconsComponent } from './garicons.component';
+import { RainComponent } from './components/rain/rain.component';
+import { HeavyRainComponent } from './components/heavy-rain/heavy-rain.component';
 
 @NgModule({
-  declarations: [RainComponent, GariconsComponent],
-  imports: [
-    BrowserModule
+  declarations: [
+    GariconsComponent,
+    RainComponent,
+    HeavyRainComponent
   ],
-  exports: [RainComponent, GariconsComponent]
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule
+  ],
+  exports: [
+    GariconsComponent,
+    RainComponent,
+    HeavyRainComponent
+  ]
 })
 export class GariconsModule { }
