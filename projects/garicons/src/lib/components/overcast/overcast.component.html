@@ -1,0 +1,20 @@
+<div class="gcon-wrapper">
+  <svg viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg"
+      [ngClass]="{'ani-overcast-onload': aniOnload, 'ani-overcast-hover': aniHover}">
+      <path id="overcast-main-cloud" fill-rule="evenodd" clip-rule="evenodd"
+          d="M27 13.001H25.74C24.7004 8.97489 20.7499 6.4164 16.6508 7.11456C12.5517 7.81273 9.67084 11.5347 10.0227 15.678C10.3746 19.8212 13.8418 23.0041 18 23.001H27C29.7614 23.001 32 20.7624 32 18.001C32 15.2396 29.7614 13.001 27 13.001Z"
+          [ngStyle]="{'stroke': iconColor, 'stroke-width': cloudStrokeMain}" stroke-linecap="round"
+          stroke-linejoin="round" />
+      <path id="overcast-front-cloud" fill-rule="evenodd" clip-rule="evenodd"
+          d="M10.5007 25.3753H9.8709C9.35128 23.1108 7.37658 21.6717 5.32761 22.0644C3.27865 22.4571 1.83864 24.5506 2.01453 26.8811C2.19041 29.2115 3.92354 31.0017 6.00201 31H10.5007C11.881 31 13 29.7409 13 28.1877C13 26.6345 11.881 25.3753 10.5007 25.3753Z"
+          [ngStyle]="{'stroke': iconColor, 'stroke-width': cloudStrokeFront}" stroke-linecap="round"
+          stroke-linejoin="round" />
+      <path id="overcast-rear-cloud" fill-rule="evenodd" clip-rule="evenodd"
+          d="M28.864 2.50015H28.5777C28.3415 1.49369 27.4439 0.854108 26.5126 1.02864C25.5812 1.20317 24.9267 2.13362 25.0066 3.16936C25.0866 4.2051 25.8743 5.00077 26.8191 5H28.864C29.4914 5 30 4.44039 30 3.75008C30 3.05976 29.4914 2.50015 28.864 2.50015Z"
+          [ngStyle]="{'stroke': iconColor, 'stroke-width': cloudStrokeRear}" stroke-linejoin="round" />
+      <path id="overcast-side-cloud" fill-rule="evenodd" clip-rule="evenodd"
+          d="M40.1823 23.2502H39.7243C39.3464 21.7405 37.9102 20.7812 36.4201 21.043C34.9299 21.3048 33.8826 22.7004 34.0106 24.254C34.1385 25.8077 35.3989 27.0012 36.9106 27H40.1823C41.1862 27 42 26.1606 42 25.1251C42 24.0896 41.1862 23.2502 40.1823 23.2502Z"
+          [ngStyle]="{'stroke': iconColor, 'stroke-width': cloudStrokeSide}" stroke-linejoin="round" />
+  </svg>
+
+</div>

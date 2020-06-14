@@ -1,4 +1,3 @@
-
 <div class="container">
   <div class="row">
     <div class="col">
@@ -6,30 +5,40 @@
     </div>
   </div>
 
-<!-- Icon:Hover / Terminal -->
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <gcon-rain
-      [strokeWidth]="2"
-      [animationAction]="'hover'"
-      ></gcon-rain>
+  <!-- Icon:Hover / Terminal -->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <gcon-rain [strokeWidth]="2" [animationAction]="'hover'"></gcon-rain>
+      </div>
+      <div class="col">
+        <div class="terminal">
+          <pre>gcon-rain</pre>
+        </div>
+      </div>
     </div>
-    <div class="col">
-      <div class="terminal">
-        <pre>gcon-rain</pre>
+    <!-- heavy-rain -->
+    <div class="row">
+      <div class="col">
+        <gcon-heavy-rain [strokeWidth]="2" [animationAction]="'hover'"></gcon-heavy-rain>
+      </div>
+
+      <div class="col">
+        <div class="terminal">
+          <pre>gcon-heavy-rain</pre>
+        </div>
+      </div>
+    </div>
+     <!-- overcast -->
+     <div class="row">
+      <div class="col">
+        <gcon-overcast [strokeWidth]="2" [animationAction]="'hover'"></gcon-overcast>
+      </div>
+
+      <div class="col">
+        <div class="terminal">
+          <pre>gcon-overcast</pre>
+        </div>
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col">
-      <gcon-heavy-rain [strokeWidth]="2" [animationAction]="'hover'"></gcon-heavy-rain>
-    </div> 
-    
-    <div class="col">
-      <div class="terminal">
-        <pre>gcon-heavy-rain</pre>
-      </div>
-    </div>
-  </div>
-</div>

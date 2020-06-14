@@ -4,12 +4,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GariconsComponent } from './garicons.component';
 import { RainComponent } from './components/rain/rain.component';
 import { HeavyRainComponent } from './components/heavy-rain/heavy-rain.component';
+import { OvercastComponent } from './components/overcast/overcast.component';
 
 @NgModule({
   declarations: [
     GariconsComponent,
     RainComponent,
-    HeavyRainComponent
+    HeavyRainComponent,
+    OvercastComponent
   ],
   imports: [
     BrowserModule,
@@ -18,7 +20,8 @@ import { HeavyRainComponent } from './components/heavy-rain/heavy-rain.component
   exports: [
     GariconsComponent,
     RainComponent,
-    HeavyRainComponent
+    HeavyRainComponent,
+    OvercastComponent
   ]
 })
 export class GariconsModule { }
