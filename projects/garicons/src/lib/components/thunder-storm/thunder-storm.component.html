@@ -1,0 +1,19 @@
+<div class="gcon-wrapper">
+  <svg viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+    [ngClass]="{'ani-thunderstorm-onload': aniOnload, 'ani-thunderstorm-hover': aniHover}">
+    <path id="lightning-cloud"
+      d="M19.9999 16.9C22.5173 16.3888 24.2378 14.0533 23.9797 11.4975C23.7215 8.94174 21.5687 6.99741 18.9999 6.99999H17.7399C16.8277 3.46818 13.6419 1.00067 9.99415 1.00067C6.34643 1.00067 3.1606 3.46818 2.24836 6.99999C1.33612 10.5318 2.92849 14.2335 6.11995 16"
+      [ngStyle]="{'stroke': iconColor, 'stroke-width': cloudStroke}" stroke-linecap="round" stroke-linejoin="round" />
+    <g *ngIf="isRaining">
+      <path id="first-lightning-rain" d="M9 13V21" [ngStyle]="{'stroke': iconColor, 'stroke-width': rainStroke}"
+        stroke-linecap="round" stroke-linejoin="round" />
+      <path id="second-lightning-rain" d="M13 15V23" [ngStyle]="{'stroke': iconColor, 'stroke-width': rainStroke}"
+        stroke-linecap="round" stroke-linejoin="round" />
+      <path id="third-lightning-rain" d="M17 13V21" [ngStyle]="{'stroke': iconColor, 'stroke-width': rainStroke}"
+        stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <path id="lightning-bolt" d="M14 11L10 17H16L12 23"
+      [ngStyle]="{'stroke': iconColor, 'stroke-width': lightningStroke}" stroke-linecap="round"
+      stroke-linejoin="round" />
+  </svg>
+</div>

@@ -1,44 +1,92 @@
 <div class="container">
   <div class="row">
-    <div class="col">
-      <h1>Garicon Collections</h1>
-    </div>
-  </div>
-
-  <!-- Icon:Hover / Terminal -->
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <gcon-rain [strokeWidth]="2" [animationAction]="'hover'"></gcon-rain>
+    <div class="col-lg-6 col-md-12">
+      <div class="row">
+        <div class="col">
+          <h1>Garicons</h1>
+        </div>
       </div>
-      <div class="col">
-        <div class="terminal">
-          <pre>gcon-rain</pre>
+      <div class="row">
+        <div class="col">
+          <label for="">Angular Animated SVG Feather Icons (no fonts)</label>
+          <p>Made by <a href="http://kliative.io">Tawi</a></p>
+
+          <h3>
+            Install
+          </h3>
+          <code>
+            npm i garicons
+          </code>
+          <h3>States</h3>
+          <ul>
+            <li>Hover</li>
+            <li>Onload</li>
+          </ul>
+          <p>V1.0 Weather</p>
+         
+
+          <h3>Why</h3>
+          <p>couldnt find an open source library of animated icons</p>
         </div>
       </div>
     </div>
-    <!-- heavy-rain -->
-    <div class="row">
-      <div class="col">
-        <gcon-heavy-rain [strokeWidth]="2" [animationAction]="'hover'"></gcon-heavy-rain>
+    <div class="col-lg-6 col-md-12">
+      <div class="row">
+        <div class="col">
+          <h1>Weather</h1>
+        </div>
       </div>
 
-      <div class="col">
-        <div class="terminal">
-          <pre>gcon-heavy-rain</pre>
+      <!-- Icon:Hover / Terminal -->
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <gcon-rain [strokeWidth]="2" [animationAction]="'hover'"></gcon-rain>
+          </div>
+          <div class="col">
+            <div class="terminal">
+              <pre>gcon-rain</pre>
+            </div>
+          </div>
+        </div>
+        <!-- heavy-rain -->
+        <div class="row">
+          <div class="col">
+            <gcon-heavy-rain [strokeWidth]="2" [animationAction]="'hover'"></gcon-heavy-rain>
+          </div>
+
+          <div class="col">
+            <div class="terminal">
+              <pre>gcon-heavy-rain</pre>
+            </div>
+          </div>
+        </div>
+        <!-- overcast -->
+        <div class="row">
+          <div class="col">
+            <gcon-overcast [strokeWidth]="2" [animationAction]="'hover'"></gcon-overcast>
+          </div>
+
+          <div class="col">
+            <div class="terminal">
+              <pre>gcon-overcast-sun</pre>
+            </div>
+          </div>
+        </div>
+        <!-- thunder Storm -->
+        <div class="row">
+          <div class="col">
+            <gcon-thunder-storm [strokeWidth]="2" [animationAction]="'hover'" [isRaining]="true"></gcon-thunder-storm>
+          </div>
+
+          <div class="col">
+            <div class="terminal">
+              <pre>gcon-thunder-storm</pre>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-     <!-- overcast -->
-     <div class="row">
-      <div class="col">
-        <gcon-overcast [strokeWidth]="2" [animationAction]="'hover'"></gcon-overcast>
-      </div>
 
-      <div class="col">
-        <div class="terminal">
-          <pre>gcon-overcast</pre>
-        </div>
-      </div>
-    </div>
+
   </div>
