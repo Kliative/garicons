@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'gcon-garicons',
+  selector: 'gi-garicons',
   template: `
     <p>
       garicons works!
