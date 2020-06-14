@@ -21,6 +21,7 @@
     "assets": [
       "src/lib/asstets/global.scss"
     ],
+    "dest": "../../dist/garicons",
     "lib": {
       "entryFile": "src/public-api.ts"
     }

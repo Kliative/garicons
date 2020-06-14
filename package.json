@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "lib:build": "ng build garicons",
-    "lib:build-watch": "ng build garicons --watch=true --output-path=dist/garicons",
+    "lib:build-watch": "ng build garicons --watch=true",
     "lib:package": "cd dist/garicons && npm pack"
   },
   "private": true,

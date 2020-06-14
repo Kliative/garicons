@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { IconCollectionComponent } from './icon-collection/icon-collection.component';
 import { GariconsModule } from 'garicons';
 
+
+
 @NgModule({
    declarations: [
       AppComponent,
