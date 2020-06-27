@@ -7,6 +7,12 @@ import { HeavyRainComponent } from './components/heavy-rain/heavy-rain.component
 import { OvercastComponent } from './components/overcast/overcast.component';
 import { OvercastSunComponent } from './components/overcast-sun/overcast-sun.component';
 import { ThunderStormComponent } from './components/thunder-storm/thunder-storm.component';
+import { LayersComponent } from './components/layers/layers.component';
+import { PrinterComponent } from './components/printer/printer.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { MinimizeComponent } from './components/minimize/minimize.component';
+import { RotateComponent } from './components/rotate/rotate.component';
+import { ChevronComponent } from './components/chevron/chevron.component';
 
 @NgModule({
   imports: [
@@ -19,7 +25,14 @@ import { ThunderStormComponent } from './components/thunder-storm/thunder-storm.
     HeavyRainComponent,
     OvercastComponent,
     OvercastSunComponent,
-    ThunderStormComponent
+    ThunderStormComponent,
+    // UI
+    LayersComponent,
+    PrinterComponent,
+    MenuComponent,
+    MinimizeComponent,
+    RotateComponent,
+    ChevronComponent
   ],
   exports: [
     GariconsComponent,
@@ -27,7 +40,14 @@ import { ThunderStormComponent } from './components/thunder-storm/thunder-storm.
     HeavyRainComponent,
     OvercastComponent,
     OvercastSunComponent,
-    ThunderStormComponent
+    ThunderStormComponent,
+    // UI
+    LayersComponent,
+    PrinterComponent,
+    MenuComponent,
+    MinimizeComponent,
+    RotateComponent,
+    ChevronComponent
   ]
 })
 export class GariconsModule { }
