@@ -1,0 +1,87 @@
+.ani-hover {
+    &:hover {
+        #first-chevron {
+            animation-name: chervon-move;
+            animation-delay: .2s;
+        }
+
+        #second-chevron {
+            animation-name: chervon-move;
+            animation-delay: .25s;
+        }
+
+    }
+}
+
+
+.ani-onload {
+
+    #first-chevron {
+        animation-name: chervon-move;
+        animation-delay: .2s;
+    }
+
+    #second-chevron {
+        animation-name: chervon-move;
+        animation-delay: .25s;
+    }
+
+
+}
+
+.dir-right {
+    transform: rotate(0deg);
+}
+
+.dir-left {
+    transform: rotate(180deg);
+}
+
+.dir-up {
+    transform: rotate(270deg);
+}
+
+.dir-down {
+    transform: rotate(90deg);
+}
+
+.dir-left {
+    transform: rotate(180deg);
+}
+
+.dir-up {
+    transform: rotate(270deg);
+}
+
+#first-chevron,
+#second-chevron {
+    animation-duration: .5s;
+    animation-iteration-count: 2;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+@keyframes chervon-move {
+    0% {
+        transform: translateX(0%);
+    }
+
+    25% {
+        transform: translateX(-10%);
+    }
+
+
+    50% {
+        transform: translateX(30%);
+    }
+
+    75% {
+        transform: translateX(-10%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}

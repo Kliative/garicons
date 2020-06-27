@@ -1,0 +1,159 @@
+.ani-thunderstorm-onload {
+
+
+    #lightning-cloud {
+        animation-name: lightning-cloud-shake;
+        animation-delay: 0s;
+    }
+
+    #lightning-bolt {
+        animation-name: lightning-bolt;
+        animation-delay: 0.4s;
+    }
+
+    #first-lightning-rain {
+
+        animation-name: lightning-rain-drop;
+        animation-delay: 0.3s;
+    }
+
+    #second-lightning-rain {
+        animation-name: lightning-rain-drop;
+        animation-delay: 0.1s;
+    }
+
+    #third-lightning-rain {
+        animation-name: lightning-rain-drop;
+        animation-delay: 0.4s;
+    }
+}
+
+.ani-thunderstorm-hover {
+    &:hover {
+
+        #lightning-cloud {
+            animation-name: lightning-cloud-shake;
+            animation-delay: 0s;
+        }
+
+        #lightning-bolt {
+            animation-name: lightning-bolt;
+            animation-delay: 0.4s;
+        }
+
+        #first-lightning-rain {
+
+            animation-name: lightning-rain-drop;
+            animation-delay: 0.3s;
+        }
+
+        #second-lightning-rain {
+            animation-name: lightning-rain-drop;
+            animation-delay: 0.1s;
+        }
+
+        #third-lightning-rain {
+            animation-name: lightning-rain-drop;
+            animation-delay: 0.4s;
+        }
+    }
+}
+
+
+
+#first-lightning-rain,
+#second-lightning-rain,
+#third-lightning-rain {
+    stroke-dasharray: 8px;
+    stroke-dashoffset: 8px;
+}
+
+#first-lightning-rain,
+#second-lightning-rain,
+#third-lightning-rain {
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+
+#lightning-cloud,
+#lightning-bolt {
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+@keyframes lightning-cloud-shake {
+
+    50% {
+        transform: translate(-1.5px, -3px) scale(1.1);
+    }
+
+}
+
+@keyframes lightning-rain-cloud-shake {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        transform: translate(-1.5px, -3px) scale(1.1);
+    }
+
+    74% {
+
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+
+
+}
+
+@keyframes lightning-bolt {
+    0% {
+        opacity: 1;
+    }
+
+    54% {
+        transform: translate(0px, 0px);
+    }
+
+    74% {
+        stroke-width: .5;
+        transform: translate(-3px, -0.5px) scale(1.2);
+        opacity: 0.02;
+    }
+
+    100% {
+        stroke-width: 2;
+        opacity: 1;
+    }
+
+}
+
+@keyframes lightning-rain-drop {
+    0% {
+        opacity: 1;
+    }
+
+    74% {
+
+        opacity: 0;
+    }
+
+    100% {
+
+        stroke-dashoffset: -20px;
+    }
+}

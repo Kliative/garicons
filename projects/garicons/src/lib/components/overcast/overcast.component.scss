@@ -1,0 +1,130 @@
+.ani-overcast-onload {
+
+    // Rain
+    #overcast-main-cloud {
+        animation-name: cloud-shake;
+        animation-delay: 0s;
+    }
+
+    #overcast-front-cloud {
+        animation-name: cloud-arrive-left;
+        animation-delay: 0.46s;
+    }
+
+    #overcast-rear-cloud {
+        animation-name: cloud-arrive-top;
+        animation-delay: 0.3s;
+    }
+
+    #overcast-side-cloud {
+        animation-name: cloud-arrive-right;
+        animation-delay: 0.2s;
+    }
+}
+
+
+.ani-overcast-hover {
+    &:hover {
+
+        // Rain
+        #overcast-main-cloud {
+            animation-name: cloud-shake;
+            animation-delay: 0s;
+        }
+
+        #overcast-front-cloud {
+            animation-name: cloud-arrive-left;
+            animation-delay: 0.46s;
+        }
+
+        #overcast-rear-cloud {
+            animation-name: cloud-arrive-top;
+            animation-delay: 0.3s;
+        }
+
+        #overcast-side-cloud {
+            animation-name: cloud-arrive-right;
+            animation-delay: 0.2s;
+        }
+    }
+}
+
+
+#overcast-main-cloud,
+#overcast-front-cloud,
+#overcast-rear-cloud,
+#overcast-side-cloud {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+// Rain
+@keyframes cloud-arrive-left {
+    0% {
+        transform: translateX(-2px)
+    }
+
+    25% {
+        transform: translateX(-1px)
+    }
+
+    50% {
+        transform: translateX(0px)
+    }
+
+    75% {
+        transform: translateX(-1px)
+    }
+
+    100% {
+        transform: translateX(-2px)
+    }
+}
+
+@keyframes cloud-arrive-top {
+    0% {
+        transform: translateY(-2px)
+    }
+
+    25% {
+        transform: translateY(-1px)
+    }
+
+    50% {
+        transform: translateY(0px)
+    }
+
+    75% {
+        transform: translateY(-1px)
+    }
+
+    100% {
+        transform: translateY(-2px)
+    }
+}
+
+@keyframes cloud-arrive-right {
+    0% {
+        transform: translateX(2px)
+    }
+
+    25% {
+        transform: translateX(1px)
+    }
+
+    50% {
+        transform: translateX(0px)
+    }
+
+    75% {
+        transform: translateX(1px)
+    }
+
+    100% {
+        transform: translateX(2px)
+    }
+}

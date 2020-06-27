@@ -1,0 +1,102 @@
+.ani-hover {
+    &:hover {
+        #top-line {
+            animation-name: top-line-ani;
+        }
+
+        #middle-line {
+            animation-name: middle-line-ani;
+        }
+
+        #bottom-line {
+            animation-name: bottom-line-ani;
+
+        }
+
+
+    }
+}
+.ani-onload {
+
+        #top-line {
+            animation-name: top-line-ani;
+        }
+
+        #middle-line {
+            animation-name: middle-line-ani;
+        }
+
+        #bottom-line {
+            animation-name: bottom-line-ani;
+
+        }
+
+}
+
+
+
+
+
+#top-line,
+#middle-line,
+#bottom-line {
+    transform-origin: center center;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-delay: 0s;
+    animation-duration: 1s;
+}
+
+
+@keyframes top-line-ani {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(25%) translateX(0%) rotate(0deg);
+    }
+
+    70% {
+        transform: translateY(18%) translateX(15%) rotate(-45deg);
+    }
+
+    100% {
+        transform: translateY(18%) translateX(15%)  rotate(-45deg);
+    }
+}
+
+@keyframes bottom-line-ani {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(-25%) translateX(0%) rotate(0deg);
+    }
+
+    70% {
+        transform: translateY(-18%) translateX(15%) rotate(45deg);
+    }
+
+    100% {
+        transform: translateY(-18%) translateX(15%) rotate(45deg);
+    }
+}
+
+@keyframes middle-line-ani {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

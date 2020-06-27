@@ -1,0 +1,173 @@
+.ani-hover {
+    &:hover {
+        #arrow {
+            animation-name: rotate-arrow-ani;
+
+        }
+
+        #rotate-line {
+            animation-name: rotate-line-ani;
+
+        }
+
+        #rotate-full {
+            animation-name: rotate-all;
+        }
+    }
+}
+.ani-onload {
+        #arrow {
+            animation-name: rotate-arrow-ani;
+
+        }
+
+        #rotate-line {
+            animation-name: rotate-line-ani;
+
+        }
+
+        #rotate-full {
+            animation-name: rotate-all;
+        }
+}
+#rotate-full {
+    transform-origin: center center;
+}
+
+#arrow {
+    stroke-dasharray: 24;
+    stroke-dashoffset: 6;
+
+}
+
+#rotate-line {
+    stroke-dasharray: 133;
+    stroke-dashoffset: 82;
+}
+
+#rotate-full,
+#rotate-line,
+#arrow {
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-delay: 0s;
+    animation-duration: 1s;
+}
+
+.dir-ccw {
+    transform: rotateY(0deg);
+}
+
+.dir-cw {
+    transform: rotateY(180deg);
+}
+
+
+@keyframes rotate-arrow-ani {
+    0% {
+        stroke-dasharray: 12;
+        stroke-dashoffset: 12;
+    }
+
+    75% {
+        stroke-dasharray: 12;
+        stroke-dashoffset: 12;
+    }
+
+    100% {
+
+        stroke-dasharray: 24;
+        stroke-dashoffset: 6;
+    }
+}
+
+
+
+
+@keyframes rotate-line-ani {
+    0% {
+        stroke-dasharray: 72;
+        stroke-dashoffset: 82;
+    }
+
+    100% {
+        stroke-dasharray: 133;
+    }
+}
+
+@keyframes rotate-all {
+
+    75% {
+        transform: rotate(0deg);
+    }
+
+    90% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+
+
+}
+
+// 
+
+// .gcon-wrapper {
+//     &:hover {
+//         #arrow{
+//             stroke-dasharray: 12;
+//             stroke-dashoffset: 12;
+//             animation: rotate-arrow-ani;
+//             animation-delay: 1.75s;
+//             animation-duration: 2s;
+//         }
+
+//         #rotate-line {
+//             stroke-dasharray: 72;
+//             stroke-dashoffset: 82;
+//             animation: rotate-line-ani;
+//             animation-delay: .5s;
+//             animation-duration: 2s;
+//         }
+//     }
+// }
+
+
+// #rotate-line,
+// #arrow {
+//     animation-iteration-count: 1;
+//     animation-timing-function: ease;
+//     animation-direction: normal;
+//     animation-fill-mode: forwards;
+//     animation-play-state: running;
+// }
+
+// .dir-ccw {
+//     transform: rotateY(0deg);
+// }
+
+// .dir-cw {
+//     transform: rotateY(180deg);
+// }
+
+// @keyframes rotate-arrow-ani {
+//     100% {
+
+//         stroke-dasharray: 24;
+//         stroke-dashoffset: 6;
+//     }
+// }
+
+
+// @keyframes rotate-line-ani {
+
+//     100% {
+//         stroke-dasharray: 133;
+
+//     }
+// }

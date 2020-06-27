@@ -1,0 +1,16 @@
+
+.top-nav {
+    position: relative;
+    width: 100%;
+    display: flex;
+    a {
+        text-decoration: none;
+        color: currentColor;
+        cursor: pointer;
+        padding: 0 1em;
+        &:first-child {
+            margin-right: auto;
+        }
+    }
+    
+}   

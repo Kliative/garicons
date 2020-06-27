@@ -5,18 +5,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IconCollectionComponent } from './icon-collection/icon-collection.component';
 import { GariconsModule } from 'garicons';
+import { WeatherCollectionComponent } from './weather-collection/weather-collection.component';
+import { UiCollectionComponent } from './ui-collection/ui-collection.component';
+import { SharedModule } from './shared/shared.module';
 
 
 
 @NgModule({
    declarations: [
       AppComponent,
-      IconCollectionComponent
+      IconCollectionComponent,
+      WeatherCollectionComponent,
+      UiCollectionComponent
    ],
    imports: [
       BrowserModule,
       AppRoutingModule,
-      GariconsModule
+      GariconsModule,
+      SharedModule
    ],
    providers: [],
    bootstrap: [

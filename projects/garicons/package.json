@@ -26,10 +26,7 @@
       "entryFile": "src/public-api.ts"
     }
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Kliative/garicons.git"
-  },
+  "repository": "git+https://github.com/Kliative/garicons.git",
   "keywords": [
     "feather",
     "icons",

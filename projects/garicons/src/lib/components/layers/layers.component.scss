@@ -1,0 +1,82 @@
+.ani-hover {
+    &:hover {
+        #top-layer {
+            animation-name: top-layer-ani;
+        }
+
+        #middle-layer {
+            animation-name: middle-layer-ani;
+        }
+
+        #bottom-layer {
+            animation-name: bottom-layer-ani;
+
+        }
+    }
+}
+
+.ani-onload {
+
+    #top-layer {
+        animation-name: top-layer-ani;
+    }
+
+    #middle-layer {
+        animation-name: middle-layer-ani;
+    }
+
+    #bottom-layer {
+        animation-name: bottom-layer-ani;
+
+    }
+
+}
+
+
+#top-layer,
+#middle-layer,
+#bottom-layer {
+    transform-origin: center center;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-delay: 0s;
+    animation-duration: 1s;
+}
+
+
+@keyframes top-layer-ani {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(15%);
+    }
+
+
+}
+
+@keyframes middle-layer-ani {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(0%);
+    }
+
+
+}
+
+@keyframes bottom-layer-ani {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(-25%);
+    }
+}
