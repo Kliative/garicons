@@ -57,7 +57,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/garicon-examples",
+            "outputPath": "projects/garicon-examples/public",
             "index": "projects/garicon-examples/src/index.html",
             "main": "projects/garicon-examples/src/main.ts",
             "polyfills": "projects/garicon-examples/src/polyfills.ts",
