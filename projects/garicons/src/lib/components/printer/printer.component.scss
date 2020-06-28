@@ -8,8 +8,6 @@
             animation-name: bottom-page-ani;
 
         }
-
-
     }
 }
 
@@ -26,6 +24,18 @@
     }
 
 }
+
+#top-page {
+    transform-origin: center 40%;
+}
+
+
+#bottom-page {
+    transform: scaleY(0%);
+    transform-origin: center 65%;
+}
+
+
 
 #top-page,
 #bottom-page {
@@ -46,11 +56,11 @@
     }
 
     40% {
-        transform: scaleY(40%);
+        transform: scaleY(50%);
     }
 
     100% {
-        transform: scaleY(40%);
+        transform: scaleY(50%);
     }
 }
 
@@ -60,10 +70,10 @@
     }
 
     40% {
-        transform: scaleY(80%);
+        transform: scaleY(100%);
     }
 
     100% {
-        transform: scaleY(80%);
+        transform: scaleY(100%);
     }
 }
