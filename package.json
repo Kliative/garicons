@@ -10,7 +10,9 @@
     "e2e": "ng e2e",
     "lib:build": "ng build garicons",
     "lib:build-watch": "ng build garicons --watch=true",
-    "lib:package": "cd dist/garicons && npm pack"
+    "lib:package": "cd dist/garicons && npm pack",
+    "yarn publish": "cd dist/garicons && npm pack",
+    "build:mixtape": "ng build gariconsExample"
   },
   "private": true,
   "dependencies": {
