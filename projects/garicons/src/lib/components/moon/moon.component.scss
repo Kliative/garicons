@@ -1,0 +1,48 @@
+.ani-hover {
+    &:hover {
+        #moon {
+            animation-name: moon-ani;
+            animation-delay: .2s;
+        }
+    }
+
+}
+
+
+
+.ani-onload {
+
+    #moon {
+        animation-name: moon-ani;
+        animation-delay: .1s;
+    }
+
+}
+
+#moon {
+
+    stroke-dasharray: 120;
+    stroke-dashoffset: 60;
+    transform-origin: center center;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+@keyframes moon-ani {
+    0% {
+        stroke-dasharray: 60;
+        transform: rotate(0deg);
+    }
+
+
+    100% {
+        stroke-dasharray: 120;
+        transform: rotate(-360deg);
+       
+    }
+}
+

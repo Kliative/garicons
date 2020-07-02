@@ -1,0 +1,213 @@
+.ani-hover {
+    &:hover {
+        #arrow {
+            animation-name: corner-arrow-ani;
+
+
+        }
+
+        #corner-line {
+            animation-name: corner-line-ani;
+
+
+        }
+
+        #corner {
+            animation-name: corner-all;
+
+        }
+    }
+}
+
+.ani-onload {
+    #arrow {
+        animation-name: corner-arrow-ani;
+
+
+    }
+
+    #corner-line {
+        animation-name: corner-line-ani;
+
+
+    }
+
+    #corner {
+        animation-name: corner-all;
+
+    }
+}
+
+#corner {
+    transform-origin: center center;
+}
+
+#arrow {
+    stroke-dasharray: 24;
+    stroke-dashoffset: 6;
+
+}
+
+#corner-line {
+    stroke-dasharray: 133;
+    stroke-dashoffset: 82;
+}
+
+#corner,
+#corner-line,
+#arrow {
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-duration: 1s;
+}
+
+
+
+.turn-up {
+    .dir-left {
+        transform: rotate(180deg);
+    }
+
+    .dir-right {
+        transform: rotate(0deg) scaleY(-1);
+    }
+}
+
+.turn-down {
+    .dir-left {
+        transform: rotate(0deg) scaleX(-1);
+    }
+
+    .dir-right {
+        transform: rotate(0deg);
+    }
+}
+
+.turn-left {
+    .dir-up {
+        transform: rotate(270deg) scaleY(-1);
+    }
+
+    .dir-down {
+        transform: rotate(0deg) scaleY(-1);
+    }
+}
+
+.turn-right {
+    .dir-left {
+        transform: rotate(0deg) scaleX(-1);
+    }
+
+    .dir-right {
+        transform: rotate(0deg);
+    }
+}
+
+
+@keyframes corner-arrow-ani {
+    0% {
+        stroke-dasharray: 19;
+        stroke-dashoffset: 19;
+    }
+
+    20% {
+        stroke-dasharray: 19;
+        stroke-dashoffset: 19;
+    }
+
+    47% {
+        stroke-dasharray: 37;
+        stroke-dashoffset: 21;
+    }
+
+    48% {
+        transform: translateY(0%);
+    }
+
+    53% {
+        transform: translateY(20%);
+    }
+
+    100% {
+
+        stroke-dasharray: 37;
+        stroke-dashoffset: 21;
+    }
+}
+
+
+
+
+@keyframes corner-line-ani {
+    0% {
+        stroke-dasharray: 72;
+        stroke-dashoffset: 82;
+    }
+
+    20% {
+        stroke-dasharray: 72;
+        stroke-dashoffset: 82;
+    }
+
+
+}
+
+// 
+
+// .gcon-wrapper {
+//     &:hover {
+//         #arrow{
+//             stroke-dasharray: 12;
+//             stroke-dashoffset: 12;
+//             animation: corner-arrow-ani;
+//             animation-delay: 1.75s;
+//             animation-duration: 2s;
+//         }
+
+//         #corner-line {
+//             stroke-dasharray: 72;
+//             stroke-dashoffset: 82;
+//             animation: corner-line-ani;
+//             animation-delay: .5s;
+//             animation-duration: 2s;
+//         }
+//     }
+// }
+
+
+// #corner-line,
+// #arrow {
+//     animation-iteration-count: 1;
+//     animation-timing-function: ease;
+//     animation-direction: normal;
+//     animation-fill-mode: forwards;
+//     animation-play-state: running;
+// }
+
+// .dir-ccw {
+//     transform: cornerY(0deg);
+// }
+
+// .dir-cw {
+//     transform: cornerY(180deg);
+// }
+
+// @keyframes corner-arrow-ani {
+//     100% {
+
+//         stroke-dasharray: 24;
+//         stroke-dashoffset: 6;
+//     }
+// }
+
+
+// @keyframes corner-line-ani {
+
+//     100% {
+//         stroke-dasharray: 133;
+
+//     }
+// }
