@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./sun.component.scss']
 })
 export class SunComponent implements OnInit {
-  iconColor = 'black';
+  @Input() iconColor = 'currentColor';
 
   lineStroke: string;
 

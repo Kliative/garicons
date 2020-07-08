@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class MoonComponent implements OnInit {
 
-    iconColor = 'black';
+    @Input() iconColor:string;
   
     lineStroke: string;
   
@@ -18,6 +18,9 @@ export class MoonComponent implements OnInit {
     aniHover = false;
   
     ngOnInit(): void {
+      if (!this.iconColor) {
+        this.iconColor = 'currenColor';
+      }
       this.lineStroke = `${this.strokeWidth}`;
   
       switch (this.animationAction) {

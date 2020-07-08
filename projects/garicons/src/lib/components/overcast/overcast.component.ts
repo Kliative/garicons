@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class OvercastComponent  implements OnInit {
 
-  iconColor = 'black';
+  @Input() iconColor:string;
   rayStroke: string;
 
   cloudStroke: string;
@@ -25,7 +25,7 @@ export class OvercastComponent  implements OnInit {
 
   ngOnInit(): void {
 
-
+   
 
     this.assignCLoudStrokeWidth(this.strokeWidth);
 

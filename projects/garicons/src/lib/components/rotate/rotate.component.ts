@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./rotate.component.scss']
 })
 export class RotateComponent implements OnInit {
-  iconColor = 'black';
+  @Input() iconColor:string;
 
   rotateStroke: string;
 
@@ -18,6 +18,8 @@ export class RotateComponent implements OnInit {
   aniHover = false;
 
   ngOnInit(): void {
+
+   
 
     this.rotateStroke = this.strokeWidth.toString();
 

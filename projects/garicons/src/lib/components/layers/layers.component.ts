@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./layers.component.scss']
 })
 export class LayersComponent implements OnInit {
-  iconColor = 'black';
+  @Input() iconColor:string;
 
   lineStroke: string;
 
@@ -18,6 +18,7 @@ export class LayersComponent implements OnInit {
   aniHover = false;
 
   ngOnInit(): void {
+   
     this.lineStroke = `${this.strokeWidth}`;
 
     switch (this.animationAction) {

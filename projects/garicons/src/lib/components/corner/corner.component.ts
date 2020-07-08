@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./corner.component.scss']
 })
 export class CornerComponent implements OnInit {
-  iconColor = 'black';
+  @Input() iconColor:string;
 
   lineStroke: string;
 
@@ -22,6 +22,7 @@ export class CornerComponent implements OnInit {
   aniHover = false;
 
   ngOnInit(): void {
+ 
     this.lineStroke = `${this.strokeWidth}`;
     if (!this.direction) {
       this.direction = 'right';
