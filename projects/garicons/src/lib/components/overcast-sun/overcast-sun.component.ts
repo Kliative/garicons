@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class OvercastSunComponent implements OnInit {
 
-  iconColor = 'black';
+  @Input() iconColor:string;
   rayStroke: string;
   cloudStroke: string;
 
@@ -20,6 +20,9 @@ export class OvercastSunComponent implements OnInit {
 
   ngOnInit(): void {
 
+   
+
+   
     this.cloudStroke = this.strokeWidth.toString();
     this.rayStroke = ((this.strokeWidth / 3) * 2).toString();
 

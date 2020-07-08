@@ -15,6 +15,12 @@ export * from './lib/components/layers/layers.component';
 export * from './lib/components/menu/menu.component';
 export * from './lib/components/printer/printer.component';
 export * from './lib/components/rotate/rotate.component';
+/*
+Misc
+*/
+export * from './lib/components/sun/sun.component';
+export * from './lib/components/moon/moon.component';
+export * from './lib/components/corner/corner.component';
 
 export * from './lib/garicons.service';
 export * from './lib/garicons.component';

@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./printer.component.scss']
 })
 export class PrinterComponent implements OnInit {
-  iconColor = 'black';
+  @Input() iconColor:string;
 
   lineStroke: string;
 
@@ -18,6 +18,8 @@ export class PrinterComponent implements OnInit {
   aniHover = false;
 
   ngOnInit(): void {
+
+   
     this.lineStroke = `${this.strokeWidth}`;
 
     switch (this.animationAction) {

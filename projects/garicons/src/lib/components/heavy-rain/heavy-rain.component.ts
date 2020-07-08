@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class HeavyRainComponent implements OnInit {
 
-  iconColor = 'black';
+  @Input() iconColor:string;
   rainStroke: string;
   cloudStroke: string;
 
@@ -19,6 +19,7 @@ export class HeavyRainComponent implements OnInit {
   aniHover = false;
 
   ngOnInit(): void {
+   
 
     this.cloudStroke = this.strokeWidth.toString();
     this.rainStroke = (this.strokeWidth / 2).toString();

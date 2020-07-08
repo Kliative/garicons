@@ -13,6 +13,9 @@ import { MenuComponent } from './components/menu/menu.component';
 import { MinimizeComponent } from './components/minimize/minimize.component';
 import { RotateComponent } from './components/rotate/rotate.component';
 import { ChevronComponent } from './components/chevron/chevron.component';
+import { MoonComponent } from './components/moon/moon.component';
+import { SunComponent } from './components/sun/sun.component';
+import { CornerComponent } from './components/corner/corner.component';
 
 @NgModule({
   imports: [
@@ -32,7 +35,11 @@ import { ChevronComponent } from './components/chevron/chevron.component';
     MenuComponent,
     MinimizeComponent,
     RotateComponent,
-    ChevronComponent
+    ChevronComponent,
+    // Misc
+    CornerComponent,
+    MoonComponent,
+    SunComponent
   ],
   exports: [
     GariconsComponent,
@@ -47,7 +54,11 @@ import { ChevronComponent } from './components/chevron/chevron.component';
     MenuComponent,
     MinimizeComponent,
     RotateComponent,
-    ChevronComponent
+    ChevronComponent,
+    // Misc
+    CornerComponent,
+    MoonComponent,
+    SunComponent
   ]
 })
 export class GariconsModule { }

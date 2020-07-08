@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class RainComponent implements OnInit {
 
-  iconColor = 'black';
+  @Input() iconColor:string;
   rainStroke: string;
   cloudStroke: string;
   @Input() animationAction: string;
@@ -21,6 +21,8 @@ export class RainComponent implements OnInit {
   aniHover = false;
 
   ngOnInit(): void {
+
+   
 
     this.cloudStroke = this.strokeWidth.toString();
     this.rainStroke = (this.strokeWidth / 2).toString();

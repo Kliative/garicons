@@ -6,8 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./chevron.component.scss']
 })
 export class ChevronComponent implements OnInit {
-  iconColor = 'black';
-  
+  @Input() iconColor: string;
+
   chevronStroke: string;
   correctViewBox: string;
   @Input() animationAction: string;
@@ -19,7 +19,7 @@ export class ChevronComponent implements OnInit {
   aniHover = false;
 
   ngOnInit(): void {
-
+   
     this.chevronStroke = this.strokeWidth.toString();
 
     if (!this.chevronDirection) {

@@ -1,24 +1,22 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'gcon-layers',
-  templateUrl: './layers.component.html',
-  styleUrls: ['./layers.component.scss']
+  selector: 'gcon-sun',
+  templateUrl: './sun.component.html',
+  styleUrls: ['./sun.component.scss']
 })
-export class LayersComponent implements OnInit {
-  @Input() iconColor:string;
+export class SunComponent implements OnInit {
+  @Input() iconColor = 'currentColor';
 
   lineStroke: string;
 
   @Input() animationAction: string;
   @Input() strokeWidth: number;
 
-
   aniOnload = false;
   aniHover = false;
 
   ngOnInit(): void {
-   
     this.lineStroke = `${this.strokeWidth}`;
 
     switch (this.animationAction) {
