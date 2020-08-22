@@ -1,0 +1,213 @@
+.ani-hover {
+    &:hover {
+        #bell {
+            animation-name: rotate-bell;
+        }
+
+        #knob {
+            animation-name: oscillate-knob;
+        }
+
+        #bell-disable-line {
+            animation-name: bell-disable-line-ani;
+        }
+
+        #bell-disabled {
+            animation-name: bell-disable-ani;
+        }
+    }
+}
+
+.ani-onload {
+
+    #bell {
+        animation-name: rotate-bell;
+    }
+
+    #knob {
+        animation-name: oscillate-knob;
+    }
+
+    #bell-disable-line {
+        animation-name: bell-disable-ani;
+    }
+
+    #bell-disabled {
+        animation-name: bell-disable-ani;
+    }
+}
+
+#bell-disable-line {
+    stroke-dasharray: 120;
+    stroke-dashoffset: 80;
+}
+
+#bell-disable-shadow-line {
+    opacity: .2;
+}
+
+#bell {
+    transform-origin: 50% 0%;
+}
+
+#knob {
+    transform-origin: 50% 0%;
+}
+
+#bell,
+#knob,
+#bell-disable-line,
+#bell-disabled  {
+    animation-iteration-count: 1;
+    animation-delay: .3s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+@keyframes rotate-bell {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(-45deg);
+    }
+
+
+    30% {
+        transform: rotate(45deg);
+    }
+
+    40% {
+        transform: rotate(-45deg);
+    }
+
+    50% {
+        transform: rotate(45deg);
+    }
+
+    60% {
+        transform: rotate(-30deg);
+    }
+
+    65% {
+        transform: rotate(20deg);
+    }
+
+
+
+    70% {
+        transform: rotate(-15deg);
+    }
+
+    75% {
+        transform: rotate(10deg);
+    }
+
+    80% {
+        transform: rotate(-15deg);
+    }
+
+    85% {
+        transform: rotate(10deg);
+    }
+
+    90% {
+        transform: rotate(0deg);
+    }
+
+    95% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes oscillate-knob {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(-45deg);
+    }
+
+
+    30% {
+        transform: rotate(45deg);
+    }
+
+    40% {
+        transform: rotate(-45deg);
+    }
+
+    50% {
+        transform: rotate(45deg);
+    }
+
+    60% {
+        transform: rotate(-30deg);
+    }
+
+    65% {
+        transform: rotate(20deg);
+    }
+
+
+
+    70% {
+        transform: rotate(-15deg);
+    }
+
+    75% {
+        transform: rotate(10deg);
+    }
+
+    80% {
+        transform: rotate(-15deg);
+    }
+
+    85% {
+        transform: rotate(10deg);
+    }
+
+    90% {
+        transform: rotate(0deg);
+    }
+
+    95% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+
+}
+
+@keyframes bell-disable-line-ani {
+    0% {
+        stroke-dasharray: 50;
+
+    }
+
+    100% {
+        stroke-dasharray: 120;
+    }
+}
+
+@keyframes bell-disable-ani {
+    0% {
+        opacity: 1;
+
+    }
+
+    100% {
+        opacity: .3;
+    }
+}

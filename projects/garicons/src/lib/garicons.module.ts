@@ -16,6 +16,22 @@ import { ChevronComponent } from './components/chevron/chevron.component';
 import { MoonComponent } from './components/moon/moon.component';
 import { SunComponent } from './components/sun/sun.component';
 import { CornerComponent } from './components/corner/corner.component';
+import { ActivityComponent } from './components/activity/activity.component';
+import { AirplayComponent } from './components/airplay/airplay.component';
+import { AlertComponent } from './components/alert/alert.component';
+import { AlignComponent } from './components/align/align.component';
+import { AnchorComponent } from './components/anchor/anchor.component';
+import { ArrowComponent } from './components/arrow/arrow.component';
+import { AtSignComponent } from './components/at-sign/at-sign.component';
+import { ApertureComponent } from './components/aperture/aperture.component';
+import { ArchiveComponent } from './components/archive/archive.component';
+import { AwardComponent } from './components/award/award.component';
+import { BarChartComponent } from './components/bar-chart/bar-chart.component';
+import { BatteryComponent } from './components/battery/battery.component';
+import { BellComponent } from './components/bell/bell.component';
+import { BluetoothComponent } from './components/bluetooth/bluetooth.component';
+import { BoldComponent } from './components/bold/bold.component';
+import { BaseComponent } from './components/base/base.component';
 
 @NgModule({
   imports: [
@@ -23,6 +39,7 @@ import { CornerComponent } from './components/corner/corner.component';
     BrowserAnimationsModule
   ],
   declarations: [
+    BaseComponent,
     GariconsComponent,
     RainComponent,
     HeavyRainComponent,
@@ -39,7 +56,22 @@ import { CornerComponent } from './components/corner/corner.component';
     // Misc
     CornerComponent,
     MoonComponent,
-    SunComponent
+    SunComponent,
+    ActivityComponent,
+    AirplayComponent,
+    AlertComponent,
+    AlignComponent,
+    AnchorComponent,
+    ArrowComponent,
+    AtSignComponent,
+    ApertureComponent,
+    ArchiveComponent,
+    AwardComponent,
+    BarChartComponent,
+    BatteryComponent,
+    BellComponent,
+    BluetoothComponent,
+    BoldComponent
   ],
   exports: [
     GariconsComponent,
@@ -58,7 +90,22 @@ import { CornerComponent } from './components/corner/corner.component';
     // Misc
     CornerComponent,
     MoonComponent,
-    SunComponent
+    SunComponent,
+    ActivityComponent,
+    AirplayComponent,
+    AlertComponent,
+    AlignComponent,
+    AnchorComponent,
+    ArrowComponent,
+    AtSignComponent,
+    ApertureComponent,
+    ArchiveComponent,
+    AwardComponent,
+    BarChartComponent,
+    BatteryComponent,
+    BellComponent,
+    BluetoothComponent,
+    BoldComponent
   ]
 })
 export class GariconsModule { }

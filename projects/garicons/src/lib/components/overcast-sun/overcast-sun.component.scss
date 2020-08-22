@@ -1,73 +1,85 @@
-.ani-overcastsun-onload {
+.ani-onload {
 
     // Rain
     #overcast-sun {
-        animation-name: sun-arrive;
-        animation-delay: 0s;
+        -webkit-animation-name: sun-arrive;
+                animation-name: sun-arrive;
+        -webkit-animation-delay: 0s;
+                animation-delay: 0s;
     }
 
     #ray-1 {
-        animation-name: ray-shine;
-        animation-delay: .1s;
+        -webkit-animation-name: ray-shine;
+                animation-name: ray-shine;
+        -webkit-animation-delay: .1s;
+                animation-delay: .1s;
 
     }
 
     #ray-2 {
-        animation-name: ray-shine;
-        animation-delay: .2s;
+        -webkit-animation-name: ray-shine;
+                animation-name: ray-shine;
+        -webkit-animation-delay: .2s;
+                animation-delay: .2s;
     }
 
     #ray-3 {
-        animation-name: ray-shine;
-        animation-delay: .3s;
+        -webkit-animation-name: ray-shine;
+                animation-name: ray-shine;
+        -webkit-animation-delay: .3s;
+                animation-delay: .3s;
     }
 
     #ray-4 {
-        animation-name: ray-shine;
-        animation-delay: .4s;
+        -webkit-animation-name: ray-shine;
+                animation-name: ray-shine;
+        -webkit-animation-delay: .4s;
+                animation-delay: .4s;
     }
 }
 
-.ani-overcastsun-hover {
+.ani-hover {
     &:hover {
 
         // Rain
         #overcast-sun {
-            animation-name: sun-arrive;
-            animation-delay: 0s;
+            -webkit-animation-name: sun-arrive;
+                    animation-name: sun-arrive;
+            -webkit-animation-delay: 0s;
+                    animation-delay: 0s;
         }
 
         #ray-1 {
-            animation-name: ray-shine;
-            animation-delay: .1s;
+            -webkit-animation-name: ray-shine;
+                    animation-name: ray-shine;
+            -webkit-animation-delay: .1s;
+                    animation-delay: .1s;
 
         }
 
         #ray-2 {
-            animation-name: ray-shine;
-            animation-delay: .2s;
+            -webkit-animation-name: ray-shine;
+                    animation-name: ray-shine;
+            -webkit-animation-delay: .2s;
+                    animation-delay: .2s;
         }
 
         #ray-3 {
-            animation-name: ray-shine;
-            animation-delay: .3s;
+            -webkit-animation-name: ray-shine;
+                    animation-name: ray-shine;
+            -webkit-animation-delay: .3s;
+                    animation-delay: .3s;
         }
 
         #ray-4 {
-            animation-name: ray-shine;
-            animation-delay: .4s;
+            -webkit-animation-name: ray-shine;
+                    animation-name: ray-shine;
+            -webkit-animation-delay: .4s;
+                    animation-delay: .4s;
         }
     }
 
 }
-
-// #overcast-sun,
-// #ray-1,
-// #ray-2,
-// #ray-3,
-// #ray-4 {
-//  opacity: 0;
-// }
 
 
 #overcast-sun,
@@ -75,22 +87,42 @@
 #ray-2,
 #ray-3,
 #ray-4 {
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
-    animation-play-state: running;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
 }
 
 // Rain
 @keyframes sun-arrive {
     0% {
-        transform: translateX(-2px);
+        -webkit-transform: translateX(-2px);
+            -ms-transform: translateX(-2px);
+                transform: translateX(-2px);
         opacity: 0;
     }
 
     100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes ray-shine {
+    0% {
+        stroke: transparent;
+        opacity: 0;
+    }
+
+    90% {
+        stroke: black;
         opacity: 1;
     }
 }

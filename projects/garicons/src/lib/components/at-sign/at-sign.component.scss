@@ -1,0 +1,94 @@
+.ani-hover {
+    &:hover {
+        #circle-path {
+            -webkit-animation-name: circle-path-ani;
+                    animation-name: circle-path-ani;
+
+        }
+
+        #circle-letter {
+            -webkit-animation-name: circle-letter-ani;
+                    animation-name: circle-letter-ani;
+
+        }
+
+    }
+
+}
+
+
+
+.ani-onload {
+
+    #circle-path {
+        -webkit-animation-name: circle-path-ani;
+                animation-name: circle-path-ani;
+
+    }
+
+    #circle-letter {
+        -webkit-animation-name: circle-letter-ani;
+                animation-name: circle-letter-ani;
+
+    }
+
+}
+
+#circle-path {
+    stroke-dasharray: 0;
+    stroke-dashoffset: 3;
+}
+
+#circle-letter {
+    stroke-dasharray: 54; 
+    stroke-dashoffset: 32;
+}
+
+#circle-path,
+#circle-letter {
+
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+@-webkit-keyframes circle-path-ani {
+    0% {
+        stroke-dasharray: 32;
+        stroke-dashoffset: 32;
+        
+    }
+
+    100% {
+        stroke-dasharray: 74;
+        stroke-dashoffset: 3;
+
+    }
+}
+
+@-webkit-keyframes circle-letter-ani {
+    0% {
+        stroke-dasharray: 32;
+        stroke-dashoffset: 32;
+        
+    }
+
+
+    100% {
+        stroke-dasharray: 54;
+        stroke-dashoffset: 32;
+
+    }
+}

@@ -1,0 +1,50 @@
+.ani-hover {
+    &:hover {
+        #bold {
+            -webkit-animation-name: bold-ani;
+            animation-name: bold-ani;
+
+        }
+
+    }
+
+}
+
+
+
+.ani-onload {
+
+    #bold {
+        -webkit-animation-name: bold-ani;
+        animation-name: bold-ani;
+
+    }
+
+}
+
+#bold {
+    stroke-dasharray: 0;
+    stroke-dashoffset: 130;
+
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-duration: 2s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+@-webkit-keyframes bold-ani {
+    50% {
+        stroke-width: .5rem;
+    }
+}

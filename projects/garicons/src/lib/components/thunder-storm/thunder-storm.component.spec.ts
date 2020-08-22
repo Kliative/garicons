@@ -29,9 +29,6 @@ describe('ThunderStormComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
 
   // Check if svg exist
   it('should exist', () => {
@@ -39,18 +36,11 @@ describe('ThunderStormComponent', () => {
   });
 
   // Check if default onload class is applied
-  it('should add onload css', () => {
-    const svg = el.query(By.css('#thunder-storm-full'));
-    expect(svg.classes['ani-thunderstorm-onload']).toBeTruthy();
+  it('should set isRainging', () => {
+    const isRaining = true;
+    component.isRaining = isRaining;
+    fixture.detectChanges();
+    expect(component.isRaining).toBeTrue();
   });
-
-
-  // check if animation hover is 'hover' then classList should contain .*-hover
-  it('should add hover css', () => {
-    component.animationAction = 'hover';
-    const svg: HTMLElement = el.query(By.css('#thunder-storm-full')).nativeElement;
-    expect(svg.classList).toContain('ani-thunderstorm-onload');
-  });
-
 });
 

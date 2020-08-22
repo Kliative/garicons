@@ -1,45 +1,31 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { BaseComponent } from '../base/base.component';
 
 @Component({
   selector: 'gcon-rotate',
   templateUrl: './rotate.component.html',
   styleUrls: ['./rotate.component.scss']
 })
-export class RotateComponent implements OnInit {
-  @Input() iconColor:string;
+export class RotateComponent extends BaseComponent implements OnInit {
 
-  rotateStroke: string;
 
-  @Input() animationAction: string;
-  @Input() strokeWidth: number;
-  @Input() clockWise: boolean;
+  rotateClockWise: boolean;
 
-  aniOnload = false;
-  aniHover = false;
+  @Input('rotateClockWise')
+  set setRotateClockWise(rotateClockWise: boolean) {
+    this.rotateClockWise = rotateClockWise;
+  }
+
+  get getRotateClockWise(): boolean {
+    return this.rotateClockWise;
+  }
 
   ngOnInit(): void {
+    this.rotateClockWise = this.initialiseRotationDirection(this.rotateClockWise);
+  }
 
-   
-
-    this.rotateStroke = this.strokeWidth.toString();
-
-
-    if (this.clockWise === null || this.clockWise === undefined) {
-      this.clockWise = true;
-    }
-
-    switch (this.animationAction) {
-      case 'onload':
-        this.aniOnload = true;
-        break;
-      case 'hover':
-        this.aniHover = true;
-        break;
-      default:
-        this.aniOnload = true;
-        break;
-    }
-
+  initialiseRotationDirection(rotateClockWise?: boolean): boolean {
+    return rotateClockWise === null || rotateClockWise === undefined ? true : false;
   }
 
 }

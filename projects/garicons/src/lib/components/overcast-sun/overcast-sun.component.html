@@ -1,8 +1,8 @@
-<div class="gcon-wrapper">
+<div class="gcon-wrapper" [ngStyle]="{'width': widthHieghtDimensions, 'height': widthHieghtDimensions}" >
   <svg id="overcast-sun-full" viewBox="0 0 26 32" fill="none" xmlns="http://www.w3.org/2000/svg"
-    [ngClass]="{'ani-overcastsun-onload': aniOnload, 'ani-overcastsun-hover': aniHover}">
-    <path id="overcast-main-cloud" [ngStyle]="{'stroke': iconColor, 'stroke-width': cloudStroke}" fill-rule="evenodd"
-      clip-rule="evenodd" [ngStyle]="{'stroke': iconColor, 'stroke-width': cloudStroke}"
+    [ngClass]="{'ani-onload': aniOnload, 'ani-hover': aniHover}">
+    <path id="overcast-main-cloud" [ngStyle]="{'stroke': iconColor, 'stroke-width': lineStroke}" fill-rule="evenodd"
+      clip-rule="evenodd" [ngStyle]="{'stroke': iconColor, 'stroke-width': lineStroke}"
       d="M27 16.001H25.74C24.7004 11.9749 20.7499 9.4164 16.6508 10.1146C12.5517 10.8127 9.67084 14.5347 10.0227 18.678C10.3746 22.8212 13.8418 26.0041 18 26.001H27C29.7614 26.001 32 23.7624 32 21.001C32 18.2396 29.7614 16.001 27 16.001Z"
       stroke-linecap="round" stroke-linejoin="round" />
     <path id="overcast-sun" d="M23.5 8.5C25 7 26 7 27 7C29.7614 7 32 9.23858 32 12C32 12.9964 32.0023 13.2204 31.5 14"

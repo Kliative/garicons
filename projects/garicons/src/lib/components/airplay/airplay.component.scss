@@ -1,0 +1,138 @@
+.ani-hover {
+    &:hover {
+        #ap-screen {
+            -webkit-animation-name: ap-screen-ani;
+                    animation-name: ap-screen-ani;
+        }
+
+        #ap-play {
+            -webkit-animation-name: ap-play-ani;
+                    animation-name: ap-play-ani;
+        }
+    }
+}
+
+.ani-onload {
+    #ap-screen {
+        -webkit-animation-name: ap-screen-ani;
+                animation-name: ap-screen-ani;
+    }
+
+    #ap-play {
+        -webkit-animation-name: ap-play-ani;
+                animation-name: ap-play-ani;
+    }
+}
+
+#ap-screen {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 10;
+
+}
+
+#ap-screen,
+#ap-play {
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+
+}
+
+
+@-webkit-keyframes ap-screen-ani {
+    0% {
+        stroke-dasharray: 60;
+        stroke-dashoffset: 10;
+    }
+
+    40% {
+        stroke-dasharray: 60;
+        stroke-dashoffset: 60;
+    }
+
+    60% {
+        stroke-dasharray: 60;
+        stroke-dashoffset: 60;
+    }
+
+    100% {
+
+        stroke-dasharray: 60;
+        stroke-dashoffset: 120;
+    }
+}
+
+
+@keyframes ap-screen-ani {
+    0% {
+        stroke-dasharray: 60;
+        stroke-dashoffset: 10;
+    }
+
+    40% {
+        stroke-dasharray: 60;
+        stroke-dashoffset: 60;
+    }
+
+    60% {
+        stroke-dasharray: 60;
+        stroke-dashoffset: 60;
+    }
+
+    100% {
+
+        stroke-dasharray: 60;
+        stroke-dashoffset: 120;
+    }
+}
+
+
+
+
+@-webkit-keyframes ap-play-ani {
+    0% {
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+    }
+
+    50% {
+        -webkit-transform: translateY(20%);
+                transform: translateY(20%);
+    }
+
+    100% {
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+    }
+}
+
+
+
+
+@keyframes ap-play-ani {
+    0% {
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+    }
+
+    50% {
+        -webkit-transform: translateY(20%);
+                transform: translateY(20%);
+    }
+
+    100% {
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+    }
+}

@@ -1,19 +1,23 @@
 .ani-hover {
     &:hover {
         #top-left {
-            animation-name: top-left-ani;
+            -webkit-animation-name: top-left-ani;
+                    animation-name: top-left-ani;
         }
 
         #bottom-left {
-            animation-name: top-left-ani;
+            -webkit-animation-name: top-left-ani;
+                    animation-name: top-left-ani;
         }
 
         #top-right {
-            animation-name: top-left-ani;
+            -webkit-animation-name: top-left-ani;
+                    animation-name: top-left-ani;
 
         }
         #bottom-right {
-            animation-name:top-left-ani;
+            -webkit-animation-name:top-left-ani;
+                    animation-name:top-left-ani;
         }
 
 
@@ -23,19 +27,23 @@
 .ani-onload {
 
         #top-left {
-            animation-name: top-left-ani;
+            -webkit-animation-name: top-left-ani;
+                    animation-name: top-left-ani;
         }
 
         #bottom-left {
-            animation-name: bottom-left-ani;
+            -webkit-animation-name: bottom-left-ani;
+                    animation-name: bottom-left-ani;
         }
 
         #top-right {
-            animation-name: top-right-ani;
+            -webkit-animation-name: top-right-ani;
+                    animation-name: top-right-ani;
 
         }
         #bottom-right {
-            animation-name: bottom-right-ani;
+            -webkit-animation-name: bottom-right-ani;
+                    animation-name: bottom-right-ani;
         }
 
 }
@@ -45,23 +53,49 @@
 #bottom-left,
 #bottom-right {
 
-    transform-origin: center center;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
-    animation-play-state: running;
-    animation-delay: 0s;
-    animation-duration: 1s;
+    -webkit-transform-origin: center center;
+
+        -ms-transform-origin: center center;
+
+            transform-origin: center center;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
+
+
+@-webkit-keyframes top-left-ani {
+    0% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+
+    70% {
+        -webkit-transform: scale(0.3);
+                transform: scale(0.3);
+    }
 }
 
 
 @keyframes top-left-ani {
     0% {
-        transform: scale(1);
+        -webkit-transform: scale(1);
+                transform: scale(1);
     }
 
     70% {
-        transform: scale(0.3);
+        -webkit-transform: scale(0.3);
+                transform: scale(0.3);
     }
 }

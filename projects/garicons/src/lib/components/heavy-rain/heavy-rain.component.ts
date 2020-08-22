@@ -1,40 +1,20 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { BaseComponent } from '../base/base.component';
 
 @Component({
   selector: 'gcon-heavy-rain',
   templateUrl: './heavy-rain.component.html',
   styleUrls: ['./heavy-rain.component.scss']
 })
-export class HeavyRainComponent implements OnInit {
+export class HeavyRainComponent extends BaseComponent {
 
-  @Input() iconColor:string;
+
   rainStroke: string;
-  cloudStroke: string;
-
-  @Input() animationAction: string;
-  @Input() strokeWidth: number;
 
 
-  aniOnload = false;
-  aniHover = false;
-
-  ngOnInit(): void {
-   
-
-    this.cloudStroke = this.strokeWidth.toString();
-    this.rainStroke = (this.strokeWidth / 2).toString();
-
-    switch (this.animationAction) {
-      case 'onload':
-        this.aniOnload = true;
-        break;
-      case 'hover':
-        this.aniHover = true;
-        break;
-      default:
-        this.aniOnload = true;
-        break;
-    }
+  constructor() {
+    super();
+    this.rainStroke = ((parseInt(this.lineStroke, 2) / 3) / 2).toString();
 
   }
 

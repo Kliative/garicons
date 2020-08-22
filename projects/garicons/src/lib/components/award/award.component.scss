@@ -1,0 +1,95 @@
+.ani-hover {
+    &:hover {
+        #award-full {
+            -webkit-animation-name: award-full-ani;
+            animation-name: award-full-ani;
+        }
+
+        #award-ribbon {
+            -webkit-animation-name: award-ribbon-ani;
+            animation-name: award-ribbon-ani;
+        }
+
+    }
+}
+
+.ani-onload {
+    #award-full {
+        -webkit-animation-name: award-full-ani;
+        animation-name: award-full-ani;
+    }
+
+    #award-ribbon {
+        -webkit-animation-name: award-ribbon-ani;
+        animation-name: award-ribbon-ani;
+    }
+}
+
+#award-ribbon,
+#award-full {
+
+    transform-origin: center center;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+
+}
+
+
+@-webkit-keyframes award-ribbon-ani {
+
+    30% {
+        transform: rotate(0deg);
+    }
+
+    60% {
+        transform: rotate(10deg);
+    }
+
+    70% {
+        transform: rotate(-10deg);
+    }
+
+    80% {
+        transform: rotate(10deg);
+    }
+
+
+}
+
+
+@-webkit-keyframes award-full-ani {
+
+    0% {
+        transform: scale(1);
+    }
+
+    10% {
+        transform: scale(0.5);
+    }
+
+    20% {
+        transform: scale(1.5);
+    }
+
+    30% {
+        transform: scale(1.4);
+    }
+    50% {
+        transform: scale(1);
+    }
+ 
+
+
+}

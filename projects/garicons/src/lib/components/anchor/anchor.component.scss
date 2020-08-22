@@ -1,0 +1,71 @@
+
+.ani-hover {
+    &:hover {
+        #anchor {
+            -webkit-animation-name: anchor-ani;
+            animation-name: anchor-ani;
+        }
+
+
+    }
+}
+
+.ani-onload {
+    #anchor {
+        -webkit-animation-name: anchor-ani;
+        animation-name: anchor-ani;
+    }
+}
+
+#anchor {
+    -webkit-transform-origin: center 80%;
+        -ms-transform-origin: center 80%;
+            transform-origin: center 80%;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+
+}
+
+
+@-webkit-keyframes anchor-ani {
+    0% {
+      -webkit-transform: translateY(0%);
+              transform: translateY(0%);
+    }
+
+    20% {
+        -webkit-transform: translateY(10%);
+                transform: translateY(10%);
+    }
+
+    30% {
+        -webkit-transform: translateY(10%) rotate(10deg);
+                transform: translateY(10%) rotate(10deg);
+    }
+
+    40% {
+        -webkit-transform: translateY(10%) rotate(-10deg);
+                transform: translateY(10%) rotate(-10deg);
+    }
+    50% {
+        -webkit-transform: translateY(10%) rotate(3deg);
+                transform: translateY(10%) rotate(3deg);
+    }
+    60% {
+        -webkit-transform: translateY(10%) rotate(-3deg);
+                transform: translateY(10%) rotate(-3deg);
+    }
+
+}

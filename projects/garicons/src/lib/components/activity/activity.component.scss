@@ -1,0 +1,84 @@
+.ani-hover {
+    &:hover {
+        #activity-line {
+            -webkit-animation-name: activity-line-ani;
+                    animation-name: activity-line-ani;
+        }
+    }
+}
+.ani-onload {
+    #activity-line {
+        -webkit-animation-name: activity-line-ani;
+                animation-name: activity-line-ani;
+    }
+}
+
+
+#activity-line {
+    -webkit-animation-iteration-count: 3;
+            animation-iteration-count: 3;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    stroke-dasharray: 60;
+    stroke-dashoffset: 12;
+}
+
+
+@-webkit-keyframes activity-line-ani {
+    0% {
+        stroke-dasharray: 60;
+        stroke-dashoffset: 12;
+    }
+
+    40% {
+        stroke-dasharray: 60;
+        stroke-dashoffset: 60;
+    }
+
+    60% {
+        stroke-dasharray: 60;
+        stroke-dashoffset: 60;
+    }
+
+    100% {
+
+        stroke-dasharray: 60;
+        stroke-dashoffset: 120;
+    }
+}
+
+
+@keyframes activity-line-ani {
+    0% {
+        stroke-dasharray: 60;
+        stroke-dashoffset: 12;
+    }
+
+    40% {
+        stroke-dasharray: 60;
+        stroke-dashoffset: 60;
+    }
+
+    60% {
+        stroke-dasharray: 60;
+        stroke-dashoffset: 60;
+    }
+
+    100% {
+
+        stroke-dasharray: 60;
+        stroke-dashoffset: 120;
+    }
+}
+
+

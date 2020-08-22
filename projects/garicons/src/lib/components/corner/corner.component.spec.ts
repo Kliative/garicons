@@ -26,31 +26,22 @@ describe('CornerComponent', () => {
     expect(el.query(By.css('#corner-full'))).toBeTruthy();
   });
 
-
-
-  // check if animation chevronDirection is set to right by defualt  and check dir-right css has been applied
-  it('should set chevronDirection to right on defualt', () => {
-    const svg: HTMLElement = el.query(By.css('#corner')).nativeElement;
-    expect(component.direction).toEqual('right');
-    expect(svg.classList).toContain('dir-right');
-
+  // Check if default onload class is applied
+  it('should add onload css', () => {
+    component.setAnimationActionType('onload');
+    fixture.detectChanges();
+    expect(component.aniHover).toBeFalse();
+    expect(component.aniOnload).toBeTrue();
   });
 
-  // check if animation turn is set to down and check turn-down css has been applied
-  it('should set turn to down', () => {
-    const comp = TestBed.createComponent(CornerComponent);
-    const compIn = comp.componentInstance;
 
-    const svg: HTMLElement = comp.debugElement.query(By.css('#corner-full')).nativeElement;
-    compIn.animationAction = 'hover';
-    compIn.strokeWidth = 1;
-    compIn.direction = 'left';
-    compIn.turn = 'down';
-    comp.detectChanges();
+  // Check if default onload class is applied
+  it('should add hover css', () => {
+    component.setAnimationActionType('hover');
+    fixture.detectChanges();
+    expect(component.aniOnload).toBeFalse();
+    expect(component.aniHover).toBeTrue();
 
-    expect(svg.classList).toContain('turn-down');
   });
-
 
 });
-

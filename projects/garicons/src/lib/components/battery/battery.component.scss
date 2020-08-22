@@ -1,0 +1,151 @@
+.ani-hover {
+    &:hover {
+        #charge-bolt {
+            -webkit-animation-name: charge-bolt-ani;
+            animation-name: charge-bolt-ani;
+        }
+
+        #charge-battery-charge {
+            -webkit-animation-name: charge-battery-charge-ani;
+            animation-name: charge-battery-charge-ani;
+        }
+
+        #charge-battery {
+            -webkit-animation-name: charge-battery-ani;
+            animation-name: charge-battery-ani;
+        }
+
+        #charge-battery-pin {
+            -webkit-animation-name: charge-battery-ani;
+            animation-name: charge-battery-ani;
+        }
+    }
+}
+
+.ani-onload {
+    #charge-bolt {
+        -webkit-animation-name: charge-bolt-ani;
+        animation-name: charge-bolt-ani;
+    }
+
+    #charge-battery-charge {
+        -webkit-animation-name: charge-battery-charge-ani;
+        animation-name: charge-battery-charge-ani;
+    }
+
+    #charge-battery {
+        -webkit-animation-name: charge-battery-ani;
+        animation-name: charge-battery-ani;
+    }
+
+    #charge-battery-pin {
+        -webkit-animation-name: charge-battery-ani;
+        animation-name: charge-battery-ani;
+    }
+
+}
+
+#charge-battery {
+    stroke-dasharray: 74;
+    stroke-dashoffset: 147;
+
+}
+#charge-bolt,
+#charge-battery-charge,
+#charge-battery-pin {
+    stroke-dasharray: 0;
+    stroke-dashoffset: 17;
+
+}
+
+#charge-bolt,
+#charge-battery ,
+#charge-battery-charge,
+#charge-battery-pin {
+    transform-origin: center center;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 2s;
+
+}
+
+@-webkit-keyframes charge-bolt-ani {
+
+    0% {
+        stroke-dasharray: 0;
+
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scale(1.5);
+    }
+
+    50% {
+
+        transform: scale(1);
+    }
+
+    100% {
+        stroke-dasharray: 40;
+
+    }
+
+
+}
+
+
+
+@-webkit-keyframes charge-battery-charge-ani {
+
+    0% {
+
+        stroke-dasharray: 30;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+
+    }
+
+    100% {
+        stroke-dasharray: 40;
+
+    }
+
+
+}
+
+
+@-webkit-keyframes charge-battery-ani {
+
+    0% {
+
+        stroke-dashoffset: 87;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+
+    }
+
+    100% {
+        stroke-dashoffset: 147;
+
+    }
+
+
+}

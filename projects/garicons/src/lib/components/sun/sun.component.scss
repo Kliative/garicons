@@ -1,13 +1,15 @@
 .ani-hover {
     &:hover {
         #sun {
-            animation-name: sun-appear;
-            animation-delay: .2s;
+            -webkit-animation-name: sun-appear;
+                    animation-name: sun-appear;
+            
         }
 
-        #sun line {
-            animation-name: ray-shine;
-            animation-delay: .2s;
+        #rays {
+            -webkit-animation-name: sun-ray-shine;
+                    animation-name: sun-ray-shine;
+            
         }
     }
 
@@ -18,33 +20,75 @@
 .ani-onload {
 
     #sun {
-        animation-name: sun-appear;
-        animation-delay: 0s;
+        -webkit-animation-name: sun-appear;
+                animation-name: sun-appear;
+        
     }
 
-    #sun line {
-        animation-name: sun-ray-shine;
-        animation-delay: .1s;
+    #rays {
+        -webkit-animation-name: sun-ray-shine;
+                animation-name: sun-ray-shine;
+        
     }
 
 }
 
 #sun,
-#sun line {
-    animation-duration: 2s;
-    animation-iteration-count: 2;
-    animation-timing-function: ease;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
-    animation-play-state: running;
+#rays {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 2;
+            animation-iteration-count: 2;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+}
+
+@-webkit-keyframes sun-appear {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+ 
+    
 }
 
 @keyframes sun-appear {
     0% {
         opacity: 0;
     }
-
+    50% {
+        
+        opacity: 1;
+    }
     100% {
+        opacity: 1;
+    }
+ 
+    
+}
+
+@-webkit-keyframes sun-ray-shine {
+    0% {
+        
+        opacity: 0;
+    }
+   
+    100% {
+        
         opacity: 1;
     }
 }
@@ -54,7 +98,7 @@
         
         opacity: 0;
     }
-
+   
     100% {
         
         opacity: 1;

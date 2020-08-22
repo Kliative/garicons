@@ -1,0 +1,179 @@
+.ani-hover {
+    &:hover {
+        #a-long-line {
+            -webkit-animation-name: a-long-line-ani;
+            animation-name: a-long-line-ani;
+        }
+
+        #a-dot {
+            -webkit-animation-name: a-dot-ani;
+            animation-name: a-dot-ani;
+        }
+
+        #a-boarder {
+            -webkit-animation-name: a-boarder-ani;
+            animation-name: a-boarder-ani;
+
+        }
+
+        #a-exclimation {
+            -webkit-animation-name: a-exclimation-ani;
+            animation-name: a-exclimation-ani;
+
+        }
+
+    }
+}
+
+.ani-onload {
+    #a-long-line {
+        -webkit-animation-name: a-long-line-ani;
+        animation-name: a-long-line-ani;
+    }
+
+    #a-dot {
+        -webkit-animation-name: a-dot-ani;
+        animation-name: a-dot-ani;
+    }
+
+    #a-boarder {
+        -webkit-animation-name: a-boarder-ani;
+        animation-name: a-boarder-ani;
+
+    }
+
+    #a-exclimation {
+        -webkit-animation-name: a-exclimation-ani;
+        animation-name: a-exclimation-ani;
+
+    }
+}
+
+
+#a-long-line,
+#a-dot,
+#a-boarder,
+#a-exclimation {
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+
+}
+
+
+@-webkit-keyframes a-boarder-ani {
+    0% {
+        -webkit-transform: scale(1, 1);
+                transform: scale(1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.4, 1.4);
+                transform: scale(1.4, 1.4);
+    }
+
+    60% {
+        -webkit-transform: scale(1.4, 1.4);
+                transform: scale(1.4, 1.4);
+    }
+
+    100% {
+
+        -webkit-transform: scale(1, 1);
+
+                transform: scale(1, 1);
+    }
+}
+
+
+@keyframes a-boarder-ani {
+    0% {
+        -webkit-transform: scale(1, 1);
+                transform: scale(1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.4, 1.4);
+                transform: scale(1.4, 1.4);
+    }
+
+    60% {
+        -webkit-transform: scale(1.4, 1.4);
+                transform: scale(1.4, 1.4);
+    }
+
+    100% {
+
+        -webkit-transform: scale(1, 1);
+
+                transform: scale(1, 1);
+    }
+}
+
+
+
+
+@-webkit-keyframes a-exclimation-ani {
+    0% {
+        -webkit-transform: scale(1, 1);
+                transform: scale(1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale(1, 1);
+                transform: scale(1, 1);
+    }
+
+    60% {
+        -webkit-transform: scale(1.8, 1.8);
+                transform: scale(1.8, 1.8);
+    }
+
+    100% {
+
+        -webkit-transform: scale(1, 1);
+
+                transform: scale(1, 1);
+    }
+}
+
+
+
+
+@keyframes a-exclimation-ani {
+    0% {
+        -webkit-transform: scale(1, 1);
+                transform: scale(1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale(1, 1);
+                transform: scale(1, 1);
+    }
+
+    60% {
+        -webkit-transform: scale(1.8, 1.8);
+                transform: scale(1.8, 1.8);
+    }
+
+    100% {
+
+        -webkit-transform: scale(1, 1);
+
+                transform: scale(1, 1);
+    }
+}

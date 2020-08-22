@@ -1,48 +1,21 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { BaseComponent } from '../base/base.component';
 
 @Component({
   selector: 'gcon-overcast',
   templateUrl: './overcast.component.html',
   styleUrls: ['./overcast.component.scss']
 })
-export class OvercastComponent  implements OnInit {
+export class OvercastComponent extends BaseComponent {
 
-  @Input() iconColor:string;
-  rayStroke: string;
-
-  cloudStroke: string;
   cloudStrokeMain: string;
   cloudStrokeFront: string;
   cloudStrokeRear: string;
   cloudStrokeSide: string;
 
-  @Input() animationAction: string;
-  @Input() strokeWidth: number;
-
-
-  aniOnload = false;
-  aniHover = false;
-
-  ngOnInit(): void {
-
-   
-
-    this.assignCLoudStrokeWidth(this.strokeWidth);
-
-
-
-    switch (this.animationAction) {
-      case 'onload':
-        this.aniOnload = true;
-        break;
-      case 'hover':
-        this.aniHover = true;
-        break;
-      default:
-        this.aniOnload = true;
-        break;
-    }
-
+  constructor() {
+    super();
+    this.assignCLoudStrokeWidth(parseInt(this.lineStroke, 2) / 3);
   }
   assignCLoudStrokeWidth(strkWidth: number): void {
 

@@ -1,0 +1,61 @@
+.ani-hover {
+    &:hover {
+        #bluetooth {
+            -webkit-animation-name: bluetooth-ani;
+            animation-name: bluetooth-ani;
+
+        }
+
+    }
+
+}
+
+#bluetooth-shadow {
+    opacity: .3;
+}
+
+.ani-onload {
+
+    #bluetooth {
+        -webkit-animation-name: bluetooth-ani;
+        animation-name: bluetooth-ani;
+
+    }
+
+}
+
+#bluetooth {
+    stroke-dasharray: 0;
+    stroke-dashoffset: 130;
+
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+@-webkit-keyframes bluetooth-ani {
+    0% {
+        stroke-dasharray: 130;
+
+    }
+
+
+    100% {
+        stroke-dasharray: 200;
+
+        
+    }
+
+}

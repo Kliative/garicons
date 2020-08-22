@@ -29,23 +29,4 @@ describe('RainComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  // Check if svg exist
-  it('should exist', () => {
-    expect(el.query(By.css('#rain-icon'))).toBeTruthy();
-  });
-
-  // Check if default onload class is applied
-  it('should add onload css', () => {
-    const svg = el.query(By.css('#rain-icon'));
-    expect(svg.classes['ani-rain-onload']).toBeTruthy();
-  });
-
-
-  // check if animation hover is 'hover' then classList should contain .*-hover
-  it('should add hover css', () => {
-    component.animationAction = 'hover';
-    const svg: HTMLElement = el.query(By.css('#rain-icon')).nativeElement;
-    expect(svg.classList).toContain('ani-rain-onload');
-  });
-
 });
