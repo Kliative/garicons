@@ -1,15 +1,18 @@
 .ani-hover {
     &:hover {
         #top-layer {
-            animation-name: top-layer-ani;
+            -webkit-animation-name: top-layer-ani;
+                    animation-name: top-layer-ani;
         }
 
         #middle-layer {
-            animation-name: middle-layer-ani;
+            -webkit-animation-name: middle-layer-ani;
+                    animation-name: middle-layer-ani;
         }
 
         #bottom-layer {
-            animation-name: bottom-layer-ani;
+            -webkit-animation-name: bottom-layer-ani;
+                    animation-name: bottom-layer-ani;
 
         }
     }
@@ -18,15 +21,18 @@
 .ani-onload {
 
     #top-layer {
-        animation-name: top-layer-ani;
+        -webkit-animation-name: top-layer-ani;
+                animation-name: top-layer-ani;
     }
 
     #middle-layer {
-        animation-name: middle-layer-ani;
+        -webkit-animation-name: middle-layer-ani;
+                animation-name: middle-layer-ani;
     }
 
     #bottom-layer {
-        animation-name: bottom-layer-ani;
+        -webkit-animation-name: bottom-layer-ani;
+                animation-name: bottom-layer-ani;
 
     }
 
@@ -36,24 +42,64 @@
 #top-layer,
 #middle-layer,
 #bottom-layer {
-    transform-origin: center center;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
-    animation-play-state: running;
-    animation-delay: 0s;
-    animation-duration: 1s;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
+
+
+@-webkit-keyframes top-layer-ani {
+    0% {
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+    }
+
+    50% {
+        -webkit-transform: translateY(15%);
+                transform: translateY(15%);
+    }
+
+
 }
 
 
 @keyframes top-layer-ani {
     0% {
-        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
     }
 
     50% {
-        transform: translateY(15%);
+        -webkit-transform: translateY(15%);
+                transform: translateY(15%);
+    }
+
+
+}
+
+@-webkit-keyframes middle-layer-ani {
+    0% {
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+    }
+
+    50% {
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
     }
 
 
@@ -61,22 +107,38 @@
 
 @keyframes middle-layer-ani {
     0% {
-        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
     }
 
     50% {
-        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
     }
 
 
 }
 
-@keyframes bottom-layer-ani {
+@-webkit-keyframes bottom-layer-ani {
     0% {
-        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
     }
 
     50% {
-        transform: translateY(-25%);
+        -webkit-transform: translateY(-25%);
+                transform: translateY(-25%);
+    }
+}
+
+@keyframes bottom-layer-ani {
+    0% {
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+    }
+
+    50% {
+        -webkit-transform: translateY(-25%);
+                transform: translateY(-25%);
     }
 }

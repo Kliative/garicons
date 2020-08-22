@@ -36,23 +36,20 @@ describe('SunComponent', () => {
 
   // Check if default onload class is applied
   it('should add onload css', () => {
-    const svg = el.query(By.css('#sun-full'));
-    expect(svg.classes['ani-onload']).toBeTruthy();
+    component.setAnimationActionType('onload');
+    fixture.detectChanges();
+    expect(component.aniHover).toBeFalse();
+    expect(component.aniOnload).toBeTrue();
   });
 
 
   // Check if default onload class is applied
   it('should add hover css', () => {
-    const comp = TestBed.createComponent(SunComponent);
-    const compIn = comp.componentInstance;
+    component.setAnimationActionType('hover');
+    fixture.detectChanges();
+    expect(component.aniOnload).toBeFalse();
+    expect(component.aniHover).toBeTrue();
 
-    const svg: HTMLElement = comp.debugElement.query(By.css('#sun-full')).nativeElement;
-    compIn.animationAction = 'hover';
-    compIn.strokeWidth = 1;
-    comp.detectChanges();
-
-    expect(compIn.aniHover).toBeTrue();
-    expect(svg.classList).toContain('ani-hover');
   });
 
 });

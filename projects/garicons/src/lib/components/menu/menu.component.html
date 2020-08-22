@@ -1,10 +1,10 @@
-<div class="gcon-wrapper">
+<div class="gcon-wrapper" [ngStyle]="{'width': widthHieghtDimensions, 'height': widthHieghtDimensions}" >
   <svg id="menu" [ngClass]="{'ani-onload': aniOnload, 'ani-hover': aniHover}"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
   <g id="menu-cross-full">
-    <path id="top-line" d="M3 6H21" [ngStyle]="{'stroke': iconColor, 'stroke-width': rotateStroke}" stroke-linecap="round" stroke-linejoin="round" />
-    <path id="middle-line" d="M3 12H21" [ngStyle]="{'stroke': iconColor, 'stroke-width': rotateStroke}" stroke-linecap="round" stroke-linejoin="round" />
+    <path id="top-line" d="M3 6H21" [ngStyle]="{'stroke': iconColor, 'stroke-width': lineStroke}" stroke-linecap="round" stroke-linejoin="round" />
+    <path id="middle-line" d="M3 12H21" [ngStyle]="{'stroke': iconColor, 'stroke-width': lineStroke}" stroke-linecap="round" stroke-linejoin="round" />
     
-    <path id="bottom-line" d="M3 18H21" [ngStyle]="{'stroke': iconColor, 'stroke-width': rotateStroke}" stroke-linecap="round" stroke-linejoin="round" />
+    <path id="bottom-line" d="M3 18H21" [ngStyle]="{'stroke': iconColor, 'stroke-width': lineStroke}" stroke-linecap="round" stroke-linejoin="round" />
   </g>
    
   </svg>

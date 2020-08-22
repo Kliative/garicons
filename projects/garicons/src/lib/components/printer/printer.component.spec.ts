@@ -28,30 +28,8 @@ describe('PrinterComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  // Check if svg exist
-  it('should exist', () => {
-    expect(el.query(By.css('#printer'))).toBeTruthy();
+  // Check if intialise rotation direction
+  it('should intialise rotation direction', () => {
+    expect(component.initialiseLineStrokePrinter()).toBe('1.5');
   });
-
-  // Check if default onload class is applied
-  it('should add onload css', () => {
-    const svg = el.query(By.css('#printer'));
-    expect(svg.classes['ani-onload']).toBeTruthy();
-  });
-
-
-  // Check if default onload class is applied
-  it('should add hover css', () => {
-    const comp = TestBed.createComponent(PrinterComponent);
-    const compIn = comp.componentInstance;
-
-    const svg: HTMLElement = comp.debugElement.query(By.css('#printer')).nativeElement;
-    compIn.animationAction = 'hover';
-    compIn.strokeWidth = 1;
-    comp.detectChanges();
-  
-    expect(compIn.aniHover).toBeTrue();
-    expect(svg.classList).toContain('ani-hover');
-  });
-
 });

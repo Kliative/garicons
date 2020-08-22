@@ -1,43 +1,18 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { BaseComponent } from '../base/base.component';
 
 @Component({
   selector: 'gcon-overcast-sun',
   templateUrl: './overcast-sun.component.html',
   styleUrls: ['./overcast-sun.component.scss']
 })
-export class OvercastSunComponent implements OnInit {
+export class OvercastSunComponent extends BaseComponent {
 
-  @Input() iconColor:string;
   rayStroke: string;
-  cloudStroke: string;
 
-  @Input() animationAction: string;
-  @Input() strokeWidth: number;
-
-
-  aniOnload = false;
-  aniHover = false;
-
-  ngOnInit(): void {
-
-   
-
-   
-    this.cloudStroke = this.strokeWidth.toString();
-    this.rayStroke = ((this.strokeWidth / 3) * 2).toString();
-
-    switch (this.animationAction) {
-      case 'onload':
-        this.aniOnload = true;
-        break;
-      case 'hover':
-        this.aniHover = true;
-        break;
-      default:
-        this.aniOnload = true;
-        break;
-    }
-
+  constructor() {
+    super();
+    this.rayStroke = ((parseInt(this.lineStroke, 2) / 3) * 2).toString();
   }
 
 }

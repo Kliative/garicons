@@ -29,24 +29,5 @@ describe('OvercastSunComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  // Check if svg exist
-  it('should exist', () => {
-    expect(el.query(By.css('#overcast-sun-full'))).toBeTruthy();
-  });
-
-  // Check if default onload class is applied
-  it('should add onload css', () => {
-    const svg = el.query(By.css('#overcast-sun-full'));
-    expect(svg.classes['ani-overcastsun-onload']).toBeTruthy();
-  });
-
-
-  // check if animation hover is 'hover' then classList should contain .*-hover
-  it('should add hover css', () => {
-    component.animationAction = 'hover';
-    const svg: HTMLElement = el.query(By.css('#overcast-sun-full')).nativeElement;
-    expect(svg.classList).toContain('ani-overcastsun-onload');
-  });
-
 });
 

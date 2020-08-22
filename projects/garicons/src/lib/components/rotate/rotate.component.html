@@ -1,14 +1,14 @@
-<div class="gcon-wrapper">
+<div class="gcon-wrapper" [ngStyle]="{'width': widthHieghtDimensions, 'height': widthHieghtDimensions}" >
   <svg viewBox="0 0 22 20" id="rotate" fill="none"
-    [ngClass]="{'dir-ccw': !clockWise, 'dir-cw': clockWise, 'ani-hover': aniHover ,'ani-onload': aniOnload }"
+    [ngClass]="{'dir-ccw': !rotateClockWise, 'dir-cw': rotateClockWise, 'ani-hover': aniHover ,'ani-onload': aniOnload }"
     xmlns="http://www.w3.org/2000/svg">
     <g id="rotate-full">
       <path id="arrow" d="M20.9966 1.99829V7.99829H14.9966"
-        [ngStyle]="{'stroke': iconColor, 'stroke-width': rotateStroke}" stroke-linecap="round"
+        [ngStyle]="{'stroke': iconColor, 'stroke-width': lineStroke}" stroke-linecap="round"
         stroke-linejoin="round" />
       <path id="rotate-line"
         d="M18.4867 12.9983C17.1513 16.7781 13.477 19.219 9.47509 18.9849C5.47319 18.7507 2.10857 15.898 1.22303 11.9883C0.337502 8.07862 2.14456 4.05455 5.65502 2.11891C9.16548 0.18328 13.533 0.802772 16.3667 3.63828L20.9967 7.99828"
-        [ngStyle]="{'stroke': iconColor, 'stroke-width': rotateStroke}" stroke-linecap="round"
+        [ngStyle]="{'stroke': iconColor, 'stroke-width': lineStroke}" stroke-linecap="round"
         stroke-linejoin="round" />
     </g>
 

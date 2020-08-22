@@ -1,48 +1,31 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { BaseComponent } from '../base/base.component';
 
 @Component({
   selector: 'gcon-chevron',
   templateUrl: './chevron.component.html',
   styleUrls: ['./chevron.component.scss']
 })
-export class ChevronComponent implements OnInit {
-  @Input() iconColor: string;
-
-  chevronStroke: string;
+export class ChevronComponent extends BaseComponent {
   correctViewBox: string;
-  @Input() animationAction: string;
 
-  @Input() strokeWidth: number;
   @Input() chevronDirection: string;
-  @Input() double: boolean;
-  aniOnload = false;
-  aniHover = false;
+  @Input() doubleChevron: boolean;
 
-  ngOnInit(): void {
-   
-    this.chevronStroke = this.strokeWidth.toString();
+  constructor() {
+    super();
 
-    if (!this.chevronDirection) {
-      this.chevronDirection = 'right';
-    }
-    if (this.double) {
-      this.correctViewBox = '0 0  13 16';
-    } else {
-      this.correctViewBox = '0 0 20 16';
-    }
+    this.chevronDirection = this.initialiseChevronDirection(this.chevronDirection);
 
-    switch (this.animationAction) {
-      case 'onload':
-        this.aniOnload = true;
-        break;
-      case 'hover':
-        this.aniHover = true;
-        break;
-      default:
-        this.aniOnload = true;
-        break;
-    }
+    this.correctViewBox = this.initialiseChevronViewBox(this.doubleChevron);
+  }
 
+  initialiseChevronDirection(chevronDirection?: string): string {
+    return chevronDirection ? chevronDirection : 'right';
+  }
+
+  initialiseChevronViewBox(doubleChevron: boolean): string {
+    return doubleChevron ? '0 0 13 16' : '0 0 20 16';
   }
 
 }
