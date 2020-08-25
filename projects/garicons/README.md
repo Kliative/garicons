@@ -2,14 +2,52 @@
 
 Open source Animated SVG Feather Icons
 
-## Shout Out ✊🏿
+#### Shout Out
 
-[Feather](https://feathericons.com/) by [Cole Bemis](https://twitter.com/colebemis) ✊🏿
+> [Feather](https://feathericons.com/) by [Cole Bemis](https://twitter.com/colebemis) ✊🏿
 
-### Under the hood
+## Installation
 
-Documentation coming soon
+```shell
+npm install garicons
+```
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
+## Usage
 
-Gari -> Feather in Kannada
+import into your NgModules
+
+```javascript
+@NgModule({
+    imports:[
+        GariconsModule,
+        ...
+    ]
+```
+
+Access them anywhere.
+
+```html
+<gcon-battery
+  [isCharging]="false"
+  [dimension]="30"
+  [strokeWidth]="2"
+  [animationAction]="'hover'"
+>
+</gcon-battery>
+```
+
+### Features
+
+#### Inputs shared by all icons
+
+1. dimensions: number
+2. strokeWidth: number
+3. animationAction: 'hover' | 'onload' - more to come!
+
+All inputs have a defualt value if not assigend when declearin thecmppnent in your template, thus you can just write.
+
+```html
+<gcon-battery> </gcon-battery>
+```
+
+Some icons have bespoke inputs, each of these will be elaborated on in the documentation
