@@ -17,7 +17,7 @@ install:
 jobs:
   include:
     - stage: karma
-      script: karma start garicons/karma.conf.js --single-run
+      script: karma start projects/garicons/karma.conf.js --single-run
     - stage: test
       script: npm run test --no-watch --no-progress --single-run --browsers=ChromeHeadlessNoSandbox
 
