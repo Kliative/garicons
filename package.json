@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "test:travis": "npm run test --no-watch --no-progress",
+    "test:travis": "ng test garicons --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "lib:build": "ng build garicons",

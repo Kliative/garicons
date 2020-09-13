@@ -6,7 +6,12 @@ node_js:
   - "12"
 
 addons:
-  chrome: stable
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
+
 cache:
   directories:
     - ./node_modules
@@ -17,7 +22,7 @@ install:
 jobs:
   include:
     - stage: test
-      script: npm run test --no-watch --no-progress --single-run --browsers=ChromeHeadlessNoSandbox
+      script: ng test garicons --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
 
 after_success:
   - echo 'SUCCESS'
