@@ -3,7 +3,7 @@ sudo: false
 
 language: node_js
 node_js:
-  - '12'
+  - "12"
 
 addons:
   chrome: stable
@@ -14,5 +14,15 @@ cache:
 install:
   - npm install
 
-script:
-  - npm run test --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
+jobs:
+  include:
+    - stage: test
+      script: npm run test --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
+    - stage: build
+      script: npm run lib:build
+
+after_success:
+  - echo 'SUCCESS'
+
+after_failure:
+  - echo 'FAIL'
