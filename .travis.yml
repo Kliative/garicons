@@ -11,13 +11,10 @@ cache:
   directories:
     - ./node_modules
 
-install:
-  - npm install
-
 jobs:
   include:
     - stage: test
-      script: timeout=6000 npm run test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
+      script: timeout=6000 npm run test -- --watch=false --no-progress
     - stage: build
       script: npm run lib:build
 
