@@ -13,13 +13,12 @@ cache:
 
 jobs:
   include:
-    # - stage: install
-    #   script: npm install
+    - stage: install
+      script: npm install
+    - stage: karma
+      script: karma start garicons/karma.conf.js --single-run
     - stage: test
-    script: karma start garicons/karma.conf.js --single-run
       script: npm run test --no-watch --no-progress --single-run --browsers=ChromeHeadlessNoSandbox
-    # - stage: build
-    #   script: npm run lib:build
 
 after_success:
   - echo 'SUCCESS'
