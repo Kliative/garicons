@@ -17,7 +17,7 @@ install:
 jobs:
   include:
     - stage: test
-      script: npm run test --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
+      script: timeout=6000 npm run test --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
     - stage: build
       script: npm run lib:build
 
