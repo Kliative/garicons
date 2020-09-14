@@ -17,6 +17,8 @@ install:
 
 jobs:
   include:
+    - stage: npm verioning
+      script: npm -v
     - stage: test
       script: ng test garicons --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
 
