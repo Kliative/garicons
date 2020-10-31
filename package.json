@@ -1,6 +1,6 @@
 {
   "name": "garicons",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -12,7 +12,7 @@
     "lib:build": "ng build garicons",
     "lib:build-watch": "ng build garicons --watch=true",
     "lib:package": "cd dist/garicons && npm pack",
-    "publish": "cd dist/garicons && npm publish",
+    "lib:publish": "cd dist/garicons && npm publish",
     "build:mixtape": "ng build gariconsExample"
   },
   "private": true,

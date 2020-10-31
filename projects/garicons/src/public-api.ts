@@ -40,7 +40,17 @@ export * from './lib/components/rotate/rotate.component';
 export * from './lib/components/sun/sun.component';
 export * from './lib/components/thunder-storm/thunder-storm.component';
 
-
+/**
+ * Release 1
+ * Sprint 1
+ * Version: 0.1.0
+ */
+export * from './lib/components/book/book.component';
+export * from './lib/components/bookmark/bookmark.component';
+export * from './lib/components/box/box.component';
+export * from './lib/components/briefcase/briefcase.component';
+export * from './lib/components/calendar/calendar.component';
+export * from './lib/components/camera/camera.component';
 
 export * from './lib/garicons.service';
 export * from './lib/garicons.component';

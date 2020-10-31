@@ -1,0 +1,73 @@
+.ani-hover {
+  &:hover {
+    #box {
+      animation-name: box-ani;
+
+    }
+
+    #inner-box-lines {
+      animation-name: inner-box-lines-ani;
+    }
+
+  }
+}
+
+.ani-onload {
+  #box {
+    animation-name: box-ani;
+
+  }
+
+  #inner-box-lines {
+    animation-name: inner-box-lines-ani;
+  }
+
+}
+
+#box,
+#inner-box-lines {
+  stroke-dasharray: 74;
+  stroke-dashoffset: 3;
+  transform-origin: center center;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-delay: 0s;
+  animation-duration: 1s;
+}
+
+@keyframes box-ani {
+  0% {
+    stroke-dasharray: 32;
+    stroke-dashoffset: 32;
+
+  }
+
+  100% {
+    stroke-dasharray: 74;
+    stroke-dashoffset: 3;
+
+  }
+}
+
+@keyframes inner-box-lines-ani {
+  0% {
+    stroke-dasharray: 32;
+    stroke-dashoffset: 32;
+
+  }
+
+  30% {
+    stroke-dasharray: 32;
+    stroke-dashoffset: 32;
+
+  }
+
+  100% {
+    stroke-dasharray: 74;
+    stroke-dashoffset: 3;
+
+  }
+}

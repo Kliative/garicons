@@ -1,0 +1,73 @@
+.ani-hover {
+  &:hover {
+
+    #briefcase-full {
+      animation-name: briefcase-full-ani;
+    }
+
+
+
+  }
+}
+
+.ani-onload {
+  #briefcase-full {
+    animation-name: briefcase-full-ani;
+  }
+}
+
+#briefcase-case,
+#briefcase-straps {
+  stroke-dasharray: 74;
+  stroke-dashoffset: 3;
+}
+
+#briefcase-full,
+#briefcase-case,
+#briefcase-straps {
+  transform-origin: top center;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-delay: 0s;
+  animation-duration: 1s;
+}
+
+@keyframes briefcase-full-ani {
+  0% {
+    transform: translateY(0px);
+  }
+
+  30% {
+    transform: translateY(-5px);
+
+  }
+
+  40% {
+    transform: translateY(-5px) translateX(5px) rotate(20deg);
+
+  }
+
+  50% {
+    transform: translateY(-5px) translateX(-5px) rotate(-20deg);
+
+  }
+
+  60% {
+    transform: translateY(-5px) rotate(0deg);
+
+  }
+  90% {
+    transform: translateY(2px);
+
+  }
+  100% {
+    transform: translateY(0px);
+
+  }
+}
+
+
+
