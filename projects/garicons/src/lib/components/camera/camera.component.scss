@@ -1,0 +1,63 @@
+.ani-hover {
+  &:hover {
+    #camera {
+      animation-name: camera-ani;
+
+    }
+
+    #camera-line {
+      animation-name: camera-ani;
+    }
+
+  }
+}
+
+.ani-onload {
+  #camera {
+    animation-name: camera-ani;
+  }
+
+  #camera-line {
+    animation-name: camera-ani;
+  }
+
+}
+#camera-off-shadow {
+    opacity: .2;
+}
+#camera,
+#camera-line {
+  stroke-dasharray: 74;
+  stroke-dashoffset: 3;
+  transform-origin: center center;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-delay: 0s;
+  animation-duration: 1s;
+}
+
+@keyframes camera-ani {
+
+
+  0% {
+    stroke-dasharray: 74;
+    stroke-dashoffset: 3;
+
+  }
+
+  30% {
+    stroke-dasharray: 74;
+    stroke-dashoffset: 3;
+
+  }
+
+  100% {
+    stroke-dasharray: 32;
+    stroke-dashoffset: 32;
+    opacity: 0;
+
+  }
+}

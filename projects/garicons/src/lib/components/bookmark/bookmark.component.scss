@@ -1,0 +1,50 @@
+.ani-hover {
+  &:hover {
+    #bookmark {
+      animation-name: bookmark-ani;
+
+    }
+
+  }
+}
+
+.ani-onload {
+  #bookmark {
+    animation-name: bookmark-ani;
+
+  }
+}
+
+#bookmark {
+  transform-origin: top center;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-delay: 0s;
+  animation-duration: .25s;
+}
+
+@keyframes bookmark-ani {
+  0% {
+    transform: scaleY(1);
+  }
+
+  25% {
+    transform: scaleY(0.6);
+  }
+
+  50% {
+    transform: scaleY(0);
+  }
+
+  75% {
+    transform: scaleY(1.4);
+  }
+
+  100% {
+    transform: scaleY(1);
+    fill: currentColor;
+  }
+}

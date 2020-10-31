@@ -1,0 +1,83 @@
+.ani-hover {
+  &:hover {
+    #book-open {
+      animation-name: book-open-ani;
+
+    }
+
+    #book-closed {
+      animation-name: book-closed-ani;
+
+    }
+
+  }
+}
+
+.ani-onload {
+  #book-open {
+    animation-name: book-open-ani;
+
+  }
+
+  #book-closed {
+    animation-name: book-closed-ani;
+
+  }
+}
+
+#book-open {
+  opacity: 1;
+}
+
+#book-closed {
+  opacity: 0;
+}
+
+#book-open,
+#book-closed {
+  transform-origin: center center;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-delay: 0s;
+  animation-duration: .5s;
+}
+
+
+
+
+@keyframes book-open-ani {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+
+
+
+@keyframes book-closed-ani {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+
+    transform: scale(1);
+    opacity: 1;
+  }
+}

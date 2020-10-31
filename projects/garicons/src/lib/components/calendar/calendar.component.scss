@@ -1,0 +1,67 @@
+.ani-hover {
+    &:hover {
+  
+      #calendar-full {
+        animation-name: calendar-ani;
+      }
+  
+  
+  
+    }
+  }
+  
+  .ani-onload {
+    #calendar-full {
+      animation-name: calendar-ani;
+    }
+  }
+  
+  
+  #calendar-full {
+    transform-origin: top center;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-delay: 0s;
+    animation-duration: 1s;
+  }
+  
+  @keyframes calendar-ani {
+    0% {
+      transform: translateY(0px);
+    }
+  
+    30% {
+      transform: translateY(-5px);
+  
+    }
+  
+    40% {
+      transform: translateY(-5px) translateX(5px) rotate(20deg)  scale(1.1);
+  
+    }
+  
+    50% {
+      transform: translateY(-5px) translateX(-5px) rotate(-20deg) scale(1.4);
+  
+    }
+  
+    60% {
+      transform: translateY(-5px) rotate(0deg) scale(1.1);
+  
+    }
+    90% {
+      transform: translateY(2px);
+  
+    }
+    100% {
+      transform: translateY(0px);
+  
+    }
+  }
+  
+  
+  
+  
