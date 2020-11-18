@@ -1,0 +1,98 @@
+.ani-hover {
+  &:hover {
+    .check-tick {
+      -webkit-animation-name: check-tick-ani;
+      animation-name: check-tick-ani;
+    }
+
+    #check-square,
+    #check-circle {
+      -webkit-animation-name: check-line-ani;
+      animation-name: check-line-ani;
+    }
+
+  }
+}
+
+.ani-onload {
+  .check-tick {
+    -webkit-animation-name: check-tick-ani;
+    animation-name: check-tick-ani;
+  }
+
+  #check-square,
+  #check-circle {
+    -webkit-animation-name: check-line-ani;
+    animation-name: check-line-ani;
+  }
+}
+
+#check-square,
+#check-circle {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 40;
+}
+
+.check-tick,
+#check-square,
+#check-circle {
+
+  transform-origin: center center;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+
+}
+
+
+@-webkit-keyframes check-line-ani {
+
+  from {
+    stroke-dashoffset: 110;
+  }
+
+  to {
+
+    stroke-dashoffset: 40;
+  }
+
+
+}
+
+
+@-webkit-keyframes check-tick-ani {
+
+  0% {
+    transform: scale(1);
+  }
+
+  10% {
+    transform: scale(0.5);
+  }
+
+  20% {
+    transform: scale(1.5);
+  }
+
+  30% {
+    transform: scale(1.4);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+
+
+}

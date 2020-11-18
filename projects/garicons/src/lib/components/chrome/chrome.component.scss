@@ -1,0 +1,138 @@
+.ani-hover {
+  &:hover {
+    #chrome-inner-circle {
+      -webkit-animation-name: chrome-circle-ani;
+      animation-name: chrome-circle-ani;
+    }
+
+    #chrome-outer-circle {
+      -webkit-animation-name: chrome-outer-circle-ani;
+      animation-name: chrome-outer-circle-ani;
+    }
+
+    #chrome-line-right,
+    #chrome-line-left,
+    #chrome-line-bottom {
+      -webkit-animation-name: chrome-line-ani;
+      animation-name: chrome-line-ani;
+    }
+
+  }
+}
+
+.ani-onload {
+  #chrome-inner-circle {
+    -webkit-animation-name: chrome-circle-ani;
+    animation-name: chrome-circle-ani;
+  }
+
+  #chrome-outer-circle {
+    -webkit-animation-name: chrome-outer-circle-ani;
+    animation-name: chrome-outer-circle-ani;
+  }
+
+  #chrome-line-right,
+  #chrome-line-left,
+  #chrome-line-bottom {
+    -webkit-animation-name: chrome-line-ani;
+    animation-name: chrome-line-ani;
+  }
+}
+
+#chrome-outer-circle {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 0;
+}
+
+#chrome-line-right,
+#chrome-line-left,
+#chrome-line-bottom {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 0;
+}
+
+#chrome-outer-circle,
+#chrome-inner-circle,
+#chrome-line-right,
+#chrome-line-left,
+#chrome-line-bottom {
+  transform-origin: center center;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+
+}
+
+@-webkit-keyframes chrome-outer-circle-ani {
+
+  0% {
+    stroke-dashoffset: 100;
+  }
+
+  50% {
+
+    stroke-dashoffset: 100;
+  }
+
+  100% {
+
+    stroke-dashoffset: 0;
+  }
+
+}
+
+@-webkit-keyframes chrome-line-ani {
+
+  26% {
+    opacity: 0;
+    stroke-dashoffset: -9;
+  }
+
+  27% {
+    opacity: 1;
+    stroke-dashoffset: -9;
+  }
+
+  50% {
+
+    stroke-dashoffset: 0;
+  }
+
+
+}
+
+
+@-webkit-keyframes chrome-circle-ani {
+
+  0% {
+    transform: scale(0);
+  }
+
+
+  20% {
+    transform: scale(1.2);
+  }
+
+  23% {
+    transform: scale(0.8);
+  }
+
+  26% {
+    transform: scale(1);
+  }
+
+
+
+
+}

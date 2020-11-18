@@ -1,0 +1,11 @@
+
+<div class="gcon-wrapper" [ngStyle]="{'width': widthHieghtDimensions, 'height': widthHieghtDimensions}" >
+  <svg [attr.viewBox]="correctViewBox" fill="none" class="dir-{{chevronDirection}}" id="chevron"
+  [ngClass]="{'ani-onload': aniOnload, 'ani-hover': aniHover}"
+    xmlns="http://www.w3.org/2000/svg">
+    <path id="first-chevron" d="M8 1L13 6L8 11" [ngStyle]="{'stroke': iconColor, 'stroke-width': lineStroke}" stroke-linecap="round"
+      stroke-linejoin="round" />
+    <path *ngIf="doubleChevron" id="second-chevron" d="M1 1L6 6L1 11" [ngStyle]="{'stroke': iconColor, 'stroke-width': lineStroke}" stroke-linecap="round"
+      stroke-linejoin="round" />
+  </svg>
+</div>
