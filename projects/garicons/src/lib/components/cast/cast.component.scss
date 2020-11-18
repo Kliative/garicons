@@ -1,0 +1,103 @@
+.ani-hover {
+  &:hover {
+    #cast-screen {
+      animation-name: screen-ani;
+      animation-delay: 0.6s;
+    }
+
+    #cast-first-line {
+      animation-name: cast-line-ani;
+      animation-delay: 0.4s;
+    }
+
+    #cast-middle-line {
+      animation-name: cast-line-ani;
+      animation-delay: 0.2s;
+    }
+
+    #cast-last-line {
+      animation-name: cast-line-ani;
+      animation-delay: 0s;
+    }
+
+  }
+}
+
+.ani-onload {
+    #cast-screen {
+        animation-name: screen-ani;
+        animation-delay: 0.2s;
+      }
+  
+      #cast-first-line {
+        animation-name: cast-line-ani;
+        animation-delay: 0.2s;
+      }
+  
+      #cast-middle-line {
+        animation-name: cast-line-ani;
+        animation-delay: 0.1s;
+      }
+  
+      #cast-last-line {
+        animation-name: cast-line-ani;
+        animation-delay: 0s;
+      }
+  
+}
+
+#cast-screen {
+  stroke-dasharray: 74;
+  stroke-dashoffset: 3;
+}
+
+
+#cast-screen,
+#cast-first-line,
+#cast-middle-line {
+    &:hover {
+        opacity: 0;
+    }
+}
+
+
+#cast-screen,
+#cast-first-line,
+#cast-middle-line,
+#cast-last-line {
+
+  transform-origin: center center;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-delay: 0s;
+  animation-duration: 2s;
+}
+
+@keyframes screen-ani {
+  0% {
+    stroke-dasharray: 32;
+    stroke-dashoffset: 32;
+
+  }
+
+  100% {
+    stroke-dasharray: 74;
+    stroke-dashoffset: 3;
+
+  }
+}
+
+@keyframes cast-line-ani {
+  from {
+    opacity: 0;
+
+  }
+
+  to {
+    opacity: 1;
+
+  }
+}

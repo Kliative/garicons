@@ -1,0 +1,58 @@
+.ani-hover {
+    &:hover {
+        #clipboard {
+            -webkit-animation-name: clipboard-ani;
+            animation-name: clipboard-ani;
+        }
+
+
+    }
+}
+
+.ani-onload {
+    #clipboard {
+        -webkit-animation-name: clipboard-ani;
+        animation-name: clipboard-ani;
+    }
+}
+
+#clipboard {
+
+    transform-origin: center center;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+
+}
+
+
+@-webkit-keyframes clipboard-ani {
+    
+    0% {
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(10deg) translateY(-3%);
+    }
+
+    50% {
+        transform: rotate(-10deg) translateY(-3%);
+    }
+
+    70% {
+        transform: rotate(10deg) translateY(-3%);
+    }
+
+
+}

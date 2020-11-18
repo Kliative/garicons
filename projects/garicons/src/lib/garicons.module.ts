@@ -38,6 +38,11 @@ import { BoxComponent } from './components/box/box.component';
 import { BriefcaseComponent } from './components/briefcase/briefcase.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
 import { CameraComponent } from './components/camera/camera.component';
+import { CastComponent } from './components/cast/cast.component';
+import { CheckComponent } from './components/check/check.component';
+import { ChromeComponent } from './components/chrome/chrome.component';
+import { CircleComponent } from './components/circle/circle.component';
+import { ClipboardComponent } from './components/clipboard/clipboard.component';
 
 @NgModule({
   imports: [
@@ -83,7 +88,12 @@ import { CameraComponent } from './components/camera/camera.component';
     BoxComponent,
     BriefcaseComponent,
     CalendarComponent,
-    CameraComponent
+    CameraComponent,
+    CastComponent,
+    CheckComponent,
+    ChromeComponent,
+    CircleComponent,
+    ClipboardComponent
   ],
   exports: [
     GariconsComponent,
@@ -123,7 +133,12 @@ import { CameraComponent } from './components/camera/camera.component';
     BoxComponent,
     BriefcaseComponent,
     CalendarComponent,
-    CameraComponent
+    CameraComponent,
+    CastComponent,
+    CheckComponent,
+    ChromeComponent,
+    CircleComponent,
+    ClipboardComponent
   ]
 })
 export class GariconsModule { }
