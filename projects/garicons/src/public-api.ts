@@ -1,11 +1,6 @@
 /*
  * Public API Surface of garicons
  */
-
-
-/*
-New August 2020
-*/
 export * from './lib/components/activity/activity.component';
 export * from './lib/components/airplay/airplay.component';
 export * from './lib/components/alert/alert.component';
@@ -51,6 +46,12 @@ export * from './lib/components/box/box.component';
 export * from './lib/components/briefcase/briefcase.component';
 export * from './lib/components/calendar/calendar.component';
 export * from './lib/components/camera/camera.component';
+
+export * from './lib/components/cast/cast.component';
+export * from './lib/components/chrome/chrome.component';
+export * from './lib/components/clipboard/clipboard.component';
+export * from './lib/components/circle/circle.component';
+export * from './lib/components/check/check.component';
 
 export * from './lib/garicons.service';
 export * from './lib/garicons.component';
