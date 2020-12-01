@@ -1,0 +1,141 @@
+
+#first-rain,
+#second-rain,
+#third-rain {
+    stroke-dasharray: 8px;
+    stroke-dashoffset: 12px;
+}
+
+.ani-hover {
+    &:hover {
+        #rain-cloud {
+            -webkit-animation-name: cloud-shake;
+                    animation-name: cloud-shake;
+            -webkit-animation-delay: 0.2s;
+                    animation-delay: 0.2s;
+        }
+
+        #first-rain {
+
+            -webkit-animation-name: rain-drop;
+
+                    animation-name: rain-drop;
+            -webkit-animation-delay: 0.3s;
+                    animation-delay: 0.3s;
+        }
+
+        #second-rain {
+            -webkit-animation-name: rain-drop;
+                    animation-name: rain-drop;
+            -webkit-animation-delay: 0.1s;
+                    animation-delay: 0.1s;
+        }
+
+        #third-rain {
+            -webkit-animation-name: rain-drop;
+                    animation-name: rain-drop;
+            -webkit-animation-delay: 0.4s;
+                    animation-delay: 0.4s;
+            
+        }
+    }
+}
+
+
+.ani-onload {
+
+    #rain-cloud {
+        -webkit-animation-name: cloud-shake;
+                animation-name: cloud-shake;
+        -webkit-animation-delay: 0.2s;
+                animation-delay: 0.2s;
+    }
+
+    #first-rain {
+
+        -webkit-animation-name: rain-drop;
+
+                animation-name: rain-drop;
+        -webkit-animation-delay: 0.3s;
+                animation-delay: 0.3s;
+    }
+
+    #second-rain {
+        -webkit-animation-name: rain-drop;
+                animation-name: rain-drop;
+        -webkit-animation-delay: 0.1s;
+                animation-delay: 0.1s;
+    }
+
+    #third-rain {
+        -webkit-animation-name: rain-drop;
+                animation-name: rain-drop;
+        -webkit-animation-delay: 0.4s;
+                animation-delay: 0.4s;
+    }
+
+}
+
+#rain-cloud,
+#first-rain,
+#second-rain,
+#third-rain {
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+}
+
+
+// Rain
+@keyframes cloud-shake {
+    0% {
+        -webkit-transform: translate(0px, 0px);
+            -ms-transform: translate(0px, 0px);
+                transform: translate(0px, 0px);
+    }
+
+    25% {
+        -webkit-transform: translate(0px, 1px);
+            -ms-transform: translate(0px, 1px);
+                transform: translate(0px, 1px);
+    }
+
+    50% {
+        -webkit-transform: translate(0px, -1px);
+            -ms-transform: translate(0px, -1px);
+                transform: translate(0px, -1px);
+    }
+
+    75% {
+        -webkit-transform: translate(0px, 1px);
+            -ms-transform: translate(0px, 1px);
+                transform: translate(0px, 1px);
+    }
+
+    100% {
+        -webkit-transform: translate(0px, 0px);
+            -ms-transform: translate(0px, 0px);
+                transform: translate(0px, 0px);
+    }
+}
+
+@-webkit-keyframes rain-drop {
+    to {
+        stroke-dashoffset: -12px;
+    }
+}
+
+@keyframes rain-drop {
+    to {
+        stroke-dashoffset: -12px;
+    }
+}

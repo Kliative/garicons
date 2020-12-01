@@ -1,0 +1,142 @@
+#first-heavy-rain,
+#second-heavy-rain,
+#third-heavy-rain {
+    stroke-dasharray: 8px;
+    stroke-dashoffset: 12px;
+}
+
+.ani-hover {
+    &:hover {
+        #heavy-rain-cloud {
+            -webkit-animation-name: heavy-cloud-shake;
+                    animation-name: heavy-cloud-shake;
+            -webkit-animation-delay: 0.7s;
+                    animation-delay: 0.7s;
+        }
+
+        #first-heavy-rain {
+
+            -webkit-animation-name: heavy-rain-drop;
+
+                    animation-name: heavy-rain-drop;
+            -webkit-animation-delay: 0.3s;
+                    animation-delay: 0.3s;
+        }
+
+        #second-heavy-rain {
+            -webkit-animation-name: heavy-rain-drop;
+                    animation-name: heavy-rain-drop;
+            -webkit-animation-delay: 0.1s;
+                    animation-delay: 0.1s;
+        }
+
+        #third-heavy-rain {
+            -webkit-animation-name: heavy-rain-drop;
+                    animation-name: heavy-rain-drop;
+            -webkit-animation-delay: 0.4s;
+                    animation-delay: 0.4s;
+        }
+
+    }
+}
+
+.ani-onload {
+    #heavy-rain-cloud {
+        -webkit-animation-name: heavy-cloud-shake;
+                animation-name: heavy-cloud-shake;
+        -webkit-animation-delay: 0.7s;
+                animation-delay: 0.7s;
+    }
+
+    #first-heavy-rain {
+
+        -webkit-animation-name: heavy-rain-drop;
+
+                animation-name: heavy-rain-drop;
+        -webkit-animation-delay: 0.3s;
+                animation-delay: 0.3s;
+    }
+
+    #second-heavy-rain {
+        -webkit-animation-name: heavy-rain-drop;
+                animation-name: heavy-rain-drop;
+        -webkit-animation-delay: 0.1s;
+                animation-delay: 0.1s;
+    }
+
+    #third-heavy-rain {
+        -webkit-animation-name: heavy-rain-drop;
+                animation-name: heavy-rain-drop;
+        -webkit-animation-delay: 0.4s;
+                animation-delay: 0.4s;
+    }
+
+ 
+}
+
+#heavy-rain-cloud,
+#first-heavy-rain,
+#second-heavy-rain,
+#third-heavy-rain,
+#first-lightning-rain,
+#second-lightning-rain,
+#third-lightning-rain {
+    -webkit-animation-duration: .8s;
+            animation-duration: .8s;
+    -webkit-animation-iteration-count: 2;
+            animation-iteration-count: 2;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+}
+
+// Heavy Rain
+
+@keyframes heavy-cloud-shake {
+    0% {
+        -webkit-transform: translate(0px, 0px);
+            -ms-transform: translate(0px, 0px);
+                transform: translate(0px, 0px);
+    }
+
+    25% {
+        -webkit-transform: translate(0px, 2px);
+            -ms-transform: translate(0px, 2px);
+                transform: translate(0px, 2px);
+    }
+
+    50% {
+        -webkit-transform: translate(-1.5px, -3px) scale(1.1);
+            -ms-transform: translate(-1.5px, -3px) scale(1.1);
+                transform: translate(-1.5px, -3px) scale(1.1);
+    }
+
+    75% {
+        -webkit-transform: translate(0px, 2px);
+            -ms-transform: translate(0px, 2px);
+                transform: translate(0px, 2px);
+    }
+
+    100% {
+        -webkit-transform: translate(0px, 0px);
+            -ms-transform: translate(0px, 0px);
+                transform: translate(0px, 0px);
+    }
+}
+
+@-webkit-keyframes heavy-rain-drop {
+    100% {
+        stroke-dashoffset: -20px;
+    }
+}
+
+@keyframes heavy-rain-drop {
+    100% {
+        stroke-dashoffset: -20px;
+    }
+}
