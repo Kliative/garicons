@@ -1,0 +1,140 @@
+.ani-onload {
+
+    // Rain
+    #overcast-sun {
+        -webkit-animation-name: sun-arrive;
+                animation-name: sun-arrive;
+        -webkit-animation-delay: 0s;
+                animation-delay: 0s;
+    }
+
+    #ray-1 {
+        -webkit-animation-name: ray-shine;
+                animation-name: ray-shine;
+        -webkit-animation-delay: .1s;
+                animation-delay: .1s;
+
+    }
+
+    #ray-2 {
+        -webkit-animation-name: ray-shine;
+                animation-name: ray-shine;
+        -webkit-animation-delay: .2s;
+                animation-delay: .2s;
+    }
+
+    #ray-3 {
+        -webkit-animation-name: ray-shine;
+                animation-name: ray-shine;
+        -webkit-animation-delay: .3s;
+                animation-delay: .3s;
+    }
+
+    #ray-4 {
+        -webkit-animation-name: ray-shine;
+                animation-name: ray-shine;
+        -webkit-animation-delay: .4s;
+                animation-delay: .4s;
+    }
+}
+
+.ani-hover {
+    &:hover {
+
+        // Rain
+        #overcast-sun {
+            -webkit-animation-name: sun-arrive;
+                    animation-name: sun-arrive;
+            -webkit-animation-delay: 0s;
+                    animation-delay: 0s;
+        }
+
+        #ray-1 {
+            -webkit-animation-name: ray-shine;
+                    animation-name: ray-shine;
+            -webkit-animation-delay: .1s;
+                    animation-delay: .1s;
+
+        }
+
+        #ray-2 {
+            -webkit-animation-name: ray-shine;
+                    animation-name: ray-shine;
+            -webkit-animation-delay: .2s;
+                    animation-delay: .2s;
+        }
+
+        #ray-3 {
+            -webkit-animation-name: ray-shine;
+                    animation-name: ray-shine;
+            -webkit-animation-delay: .3s;
+                    animation-delay: .3s;
+        }
+
+        #ray-4 {
+            -webkit-animation-name: ray-shine;
+                    animation-name: ray-shine;
+            -webkit-animation-delay: .4s;
+                    animation-delay: .4s;
+        }
+    }
+
+}
+
+
+#overcast-sun,
+#ray-1,
+#ray-2,
+#ray-3,
+#ray-4 {
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+}
+
+// Rain
+@keyframes sun-arrive {
+    0% {
+        -webkit-transform: translateX(-2px);
+            -ms-transform: translateX(-2px);
+                transform: translateX(-2px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes ray-shine {
+    0% {
+        stroke: transparent;
+        opacity: 0;
+    }
+
+    90% {
+        stroke: black;
+        opacity: 1;
+    }
+}
+
+@keyframes ray-shine {
+    0% {
+        stroke: transparent;
+        opacity: 0;
+    }
+
+    90% {
+        stroke: black;
+        opacity: 1;
+    }
+}

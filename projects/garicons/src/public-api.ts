@@ -53,6 +53,9 @@ export * from './lib/components/clipboard/clipboard.component';
 export * from './lib/components/circle/circle.component';
 export * from './lib/components/check/check.component';
 
+export * from './lib/components/clock/clock.component';
+export * from './lib/components/cloud/cloud.component';
+
 export * from './lib/garicons.service';
 export * from './lib/garicons.component';
 export * from './lib/garicons.module';

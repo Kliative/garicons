@@ -1,0 +1,85 @@
+.ani-hover {
+  &:hover {
+
+    #cloud-off,
+    #cloud-off-line {
+      animation-name: cloud-off-line-ani;
+    }
+
+    #cloud {
+      animation-name: cloud-shake-ani;
+    }
+
+    #clock-minute-hand {
+      animation-name: cloud-shake;
+    }
+  }
+}
+
+.ani-onload {
+  &:hover {
+    #clock-hour-hand {
+      animation-name: clock-hour-hand-ani;
+    }
+
+    #clock-minute-hand {
+      animation-name: clock-minute-hand-ani;
+    }
+  }
+}
+
+#cloud-off-line {
+  stroke-dasharray: 40;
+  stroke-dashoffset: 0;
+}
+#cloud-off-trans {
+  opacity: .3;
+}
+
+
+#cloud-off-full #cloud-off-line,
+#cloud-off,
+#cloud {
+  transform-origin: center center;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+
+}
+
+@keyframes cloud-shake-ani {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.4);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes cloud-off-line-ani {
+  0% {
+    stroke-dashoffset: 40;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+
+}
