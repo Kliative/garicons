@@ -1,9 +1,14 @@
 .ani-hover {
-  #cloud-snow-backdrop {
+
+  #snow-rain-cloud {
     &:hover {
-      opacity: 0;
+      #cloud-snow-backdrop {
+
+        display: none;
+      }
     }
   }
+
 }
 
 .ani-onload {
@@ -13,8 +18,8 @@
 }
 
 #cloud-snow-backdrop {
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
   -webkit-animation-direction: normal;
@@ -25,8 +30,8 @@
   animation-play-state: running;
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
-  -webkit-animation-duration: .1s;
-  animation-duration: .1s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
 
 }
 

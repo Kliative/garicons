@@ -1,0 +1,58 @@
+.ani-hover {
+  &:hover {
+    #copy-box {
+      animation-name: copy-box-ani;
+    }
+    #copied-box {
+      animation-name: copied-box-ani;
+    }
+  }
+}
+
+.ani-onload {
+  #copy-box {
+    animation-name: copy-box-ani;
+  }
+  #copied-box {
+    animation-name: copied-box-ani;
+  }
+}
+
+#copy-box,
+#copied-box {
+  transform-origin: center center;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+}
+
+@keyframes copied-box-ani {
+  0% {
+    transform: translate(14%, 14%);
+  }
+
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes copy-box-ani {
+  0% {
+    transform: translate(-14%, -14%);
+  }
+
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
