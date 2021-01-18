@@ -1,0 +1,41 @@
+.ani-hover {
+    &:hover {
+        #columns {
+            animation-name: columns-ani;
+        }
+    }
+}
+
+.ani-onload {
+    #columns {
+        animation-name: columns-ani;
+    }
+}
+
+#columns {
+    transform-origin: center 20%;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+@keyframes columns-ani {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+}
