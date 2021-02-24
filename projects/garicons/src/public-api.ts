@@ -53,6 +53,12 @@ export * from './lib/components/clipboard/clipboard.component';
 export * from './lib/components/circle/circle.component';
 export * from './lib/components/check/check.component';
 
+export * from './lib/components/cpu/cpu.component';
+export * from './lib/components/credit-card/credit-card.component';
+export * from './lib/components/crop/crop.component';
+export * from './lib/components/crosshair/crosshair.component';
+export * from './lib/components/database/database.component';
+
 export * from './lib/components/clock/clock.component';
 export * from './lib/components/cloud/cloud.component';
 

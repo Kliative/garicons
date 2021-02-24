@@ -1,0 +1,84 @@
+.ani-hover {
+    &:hover {
+        #right-pins,
+        #left-pins {
+            animation-name: cpu-Xpin-ani;
+        }
+        #bottom-pins,
+        #top-pins {
+            animation-name: cpu-Ypin-ani;
+        }
+        #cpu-inner-rectangle {
+            animation-name: cpu-square-ani;
+            -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s
+        }
+    }
+}
+
+.ani-onload {
+    #right-pins,
+    #left-pins {
+        animation-name: cpu-Xpin-ani;
+    }
+    #bottom-pins,
+    #top-pins {
+        animation-name: cpu-Ypin-ani;
+    }
+    #cpu-inner-rectangle {
+        animation-name: cpu-square-ani;
+        -webkit-animation-delay: 0.1s;
+        animation-delay: 0.1s
+    }
+}
+
+#cpu-inner-rectangle,
+#right-pins,
+#left-pins,
+#bottom-pins,
+#top-pins {
+    transform-origin: center center;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+@keyframes cpu-Ypin-ani {
+    0% {
+        transform: scaleY(0.85);
+    }
+
+    80% {
+        transform: scaleY(1.1);
+    }
+}
+@keyframes cpu-Xpin-ani {
+    0% {
+        transform: scaleX(0.85);
+    }
+
+    80% {
+        transform: scaleX(1.1);
+    }
+}
+
+@keyframes cpu-square-ani {
+    0% {
+        transform: scale(0.85);
+    }
+
+    80% {
+        transform: scale(1.1);
+    }
+}
