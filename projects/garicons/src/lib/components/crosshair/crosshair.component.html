@@ -1,0 +1,14 @@
+<div class="gcon-wrapper" [ngStyle]="{'width': widthHieghtDimensions, 'height': widthHieghtDimensions}">
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+    [ngStyle]="{'stroke': iconColor, 'stroke-width': lineStroke}"
+    [ngClass]="{'ani-onload': aniOnload, 'ani-hover': aniHover}" stroke-linecap="round" stroke-linejoin="round">
+    <g id="crosshair">
+      <circle cx="12" cy="12" r="10" />
+      <line id="crosshair-right" x1="22" y1="12" x2="18" y2="12" />
+      <line id="crosshair-left" x1="6" y1="12" x2="2" y2="12" />
+      <line id="crosshair-top" x1="12" y1="6" x2="12" y2="2" />
+      <line id="crosshair-bottom" x1="12" y1="22" x2="12" y2="18" />
+    </g>
+  </svg>
+</div>
