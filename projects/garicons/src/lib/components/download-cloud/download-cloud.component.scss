@@ -1,0 +1,61 @@
+.ani-hover {
+    &:hover {
+        #download-cloud {
+            animation-name: download-cloud-ani;
+        }
+        #download-cloud-arrow {
+            animation-name: download-cloud-arrow-ani;
+        }
+    }
+}
+
+.ani-onload {
+    #download-cloud {
+        animation-name: download-cloud-ani;
+    }
+    #download-cloud-arrow {
+        animation-name: download-cloud-arrow-ani;
+    }
+}
+
+#download-cloud,
+#download-cloud-arrow {
+    transform-origin: center center;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+@keyframes download-cloud-arrow-ani {
+
+
+    50% {
+        transform: translateY(18%);
+    }
+
+    70% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes download-cloud-ani {
+    70% {
+        transform: translateY(0%);
+    }
+    72% {
+        transform: translateY(-5%);
+    }
+
+    80% {
+        transform: translateY(0%);
+    }
+}

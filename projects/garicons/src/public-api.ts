@@ -52,15 +52,23 @@ export * from './lib/components/chrome/chrome.component';
 export * from './lib/components/clipboard/clipboard.component';
 export * from './lib/components/circle/circle.component';
 export * from './lib/components/check/check.component';
-
+export * from './lib/components/clock/clock.component';
+export * from './lib/components/cloud/cloud.component';
 export * from './lib/components/cpu/cpu.component';
 export * from './lib/components/credit-card/credit-card.component';
 export * from './lib/components/crop/crop.component';
 export * from './lib/components/crosshair/crosshair.component';
 export * from './lib/components/database/database.component';
 
-export * from './lib/components/clock/clock.component';
-export * from './lib/components/cloud/cloud.component';
+export * from './lib/components/delete/delete.component';
+export * from './lib/components/disc/disc.component';
+export * from './lib/components/divide/divide.component';
+
+export * from './lib/components/dollar-sign/dollar-sign.component';
+export * from './lib/components/download/download.component';
+export * from './lib/components/download-cloud/download-cloud.component';
+export * from './lib/components/dribble/dribble.component';
+export * from './lib/components/droplet/droplet.component';
 
 export * from './lib/garicons.service';
 export * from './lib/garicons.component';

@@ -1,0 +1,66 @@
+.ani-hover {
+    &:hover {
+        #delete-border {
+            animation-name: delete-border-ani; 
+        }
+        #delete-cross {
+            animation-name: delete-cross-ani;
+        }
+    }
+}
+
+.ani-onload {
+    #delete-border {
+        animation-name: delete-border-ani; 
+    }
+    #delete-cross {
+        animation-name: delete-cross-ani;
+    }
+}
+
+#delete-border,
+#delete-cross {
+    transform-origin: center center;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+@keyframes delete-border-ani {
+    70% {
+        opacity: 1;
+    }
+   
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes delete-cross-ani {
+    0% {
+        transform: scale(1);
+    }
+
+    30% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

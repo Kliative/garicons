@@ -1,6 +1,6 @@
 {
   "name": "garicons",
-  "version": "0.1.6",
+  "version": "0.1.9",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,6 +9,7 @@
     "test:travis": "ng test garicons --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "prep": "npm run lib:build && npm run lib:package",
     "lib:build": "ng build garicons",
     "lib:build-watch": "ng build garicons --watch=true",
     "lib:package": "cd dist/garicons && npm pack",

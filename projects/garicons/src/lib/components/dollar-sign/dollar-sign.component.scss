@@ -1,0 +1,68 @@
+.ani-hover {
+    &:hover {
+        #dollar-line {
+            animation-name: dollar-line-ani;
+        }
+        #dollar-symbol {
+            animation-name: dollar-symbol-ani;
+        }
+    }
+}
+
+.ani-onload {
+    #dollar-line {
+        animation-name: dollar-line-ani;
+    }
+    #dollar-symbol {
+        animation-name: dollar-symbol-ani;
+    }
+}
+
+#dollar-line {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 15;
+}
+#dollar-symbol {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 50;
+}
+#dollar-line,
+#dollar-symbol {
+    transform-origin: center center;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+@keyframes dollar-line-ani {
+    0% {
+        stroke-dashoffset: 100;
+    }
+
+    50% {
+        stroke-dashoffset: 100;
+    }
+
+    100% {
+        stroke-dashoffset: 15;
+    }
+}
+
+@keyframes dollar-symbol-ani {
+    0% {
+        stroke-dashoffset: 100;
+    }
+
+    100% {
+        stroke-dashoffset: 15;
+    }
+}
