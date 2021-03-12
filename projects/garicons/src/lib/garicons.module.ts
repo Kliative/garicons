@@ -62,6 +62,10 @@ import { DeleteComponent } from './components/delete/delete.component';
 import { DiscComponent } from './components/disc/disc.component';
 import { DivideComponent } from './components/divide/divide.component';
 import { DollarSignComponent, DownloadComponent, DownloadCloudComponent, DribbleComponent, DropletComponent } from '../public-api';
+import { EditComponent } from './components/edit/edit.component';
+import { ExternalLinkComponent } from './components/external-link/external-link.component';
+import { EyeComponent } from './components/eye/eye.component';
+import { FacebookComponent } from './components/facebook/facebook.component';
 
 let gariconComponents = [
   BaseComponent,
@@ -130,7 +134,11 @@ let gariconComponents = [
   DownloadComponent,
   DownloadCloudComponent,
   DribbleComponent,
-  DropletComponent
+  DropletComponent,
+  EditComponent,
+  ExternalLinkComponent,
+  EyeComponent,
+  FacebookComponent
 ]
 
 @NgModule({

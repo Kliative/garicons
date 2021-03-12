@@ -1,0 +1,66 @@
+.ani-hover {
+    &:hover {
+        #external-link-arrow {
+            animation-name: external-link-arrow-ani;
+        }
+        #external-link-box {
+            animation-name: external-link-box-ani;
+        }
+    }
+}
+
+.ani-onload {
+    #external-link-arrow {
+        animation-name: external-link-arrow-ani;
+    }
+    #external-link-box {
+        animation-name: external-link-box-ani;
+    }
+}
+
+#external-link-box {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 15;
+}
+
+#external-link-arrow,
+#external-link-box {
+    transform-origin: center center;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+@keyframes external-link-arrow-ani {
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+    50% {
+        transform: translateX(0%) translateY(0%);
+    }
+
+    60% {
+        transform: translateX(10%) translateY(-10%);
+    }
+}
+
+@keyframes external-link-box-ani {
+    0% {
+        stroke-dashoffset: 100;
+    }
+
+    100% {
+        stroke-dashoffset: 15;
+    }
+}

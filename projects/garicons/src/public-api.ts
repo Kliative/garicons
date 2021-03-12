@@ -70,6 +70,11 @@ export * from './lib/components/download-cloud/download-cloud.component';
 export * from './lib/components/dribble/dribble.component';
 export * from './lib/components/droplet/droplet.component';
 
+export * from './lib/components/edit/edit.component';
+export * from './lib/components/external-link/external-link.component';
+export * from './lib/components/eye/eye.component';
+export * from './lib/components/facebook/facebook.component';
+
 export * from './lib/garicons.service';
 export * from './lib/garicons.component';
 export * from './lib/garicons.module';
