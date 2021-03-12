@@ -1,0 +1,22 @@
+<div class="gcon-wrapper" [ngStyle]="{'width': widthHieghtDimensions, 'height': widthHieghtDimensions}">
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+    [ngStyle]="{'stroke': iconColor, 'stroke-width': lineStroke}"
+    [ngClass]="{'ani-onload': aniOnload, 'ani-hover': aniHover}" stroke-linecap="round" stroke-linejoin="round">
+    <ng-container [ngSwitch]="editType">
+      <ng-container *ngSwitchCase="'box'">
+        <path id="edit-box" d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+        <path id="edit-box-pen" d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+      </ng-container>
+      <ng-container *ngSwitchCase="'line'">
+        <path id="edit-line" d="M12 20h9" />
+        <path id="edit-line-pen" d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+      </ng-container>
+
+      <g *ngSwitchDefault>
+        <path id="edit-pen" d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z" />
+      </g>
+    </ng-container>
+
+  </svg>
+</div>

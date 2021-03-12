@@ -53,8 +53,93 @@ import { ColumnsComponent } from './components/columns/columns.component';
 import { CommandComponent } from './components/command/command.component';
 import { CompassComponent } from './components/compass/compass.component';
 import { CopyComponent } from './components/copy/copy.component';
+import { CpuComponent } from './components/cpu/cpu.component';
+import { CreditCardComponent } from './components/credit-card/credit-card.component';
+import { CropComponent } from './components/crop/crop.component';
+import { CrosshairComponent } from './components/crosshair/crosshair.component';
+import { DatabaseComponent } from './components/database/database.component';
+import { DeleteComponent } from './components/delete/delete.component';
+import { DiscComponent } from './components/disc/disc.component';
+import { DivideComponent } from './components/divide/divide.component';
+import { DollarSignComponent, DownloadComponent, DownloadCloudComponent, DribbleComponent, DropletComponent } from '../public-api';
+import { EditComponent } from './components/edit/edit.component';
+import { ExternalLinkComponent } from './components/external-link/external-link.component';
+import { EyeComponent } from './components/eye/eye.component';
+import { FacebookComponent } from './components/facebook/facebook.component';
 
-
+let gariconComponents = [
+  BaseComponent,
+  GariconsComponent,
+  RainComponent,
+  HeavyRainComponent,
+  OvercastComponent,
+  OvercastSunComponent,
+  ThunderStormComponent,
+  // UI
+  LayersComponent,
+  PrinterComponent,
+  MenuComponent,
+  MinimizeComponent,
+  RotateComponent,
+  ChevronComponent,
+  // Misc
+  CornerComponent,
+  MoonComponent,
+  SunComponent,
+  ActivityComponent,
+  AirplayComponent,
+  AlertComponent,
+  AlignComponent,
+  AnchorComponent,
+  ArrowComponent,
+  AtSignComponent,
+  ApertureComponent,
+  ArchiveComponent,
+  AwardComponent,
+  BarChartComponent,
+  BatteryComponent,
+  BellComponent,
+  BluetoothComponent,
+  BoldComponent,
+  BookComponent,
+  BookmarkComponent,
+  BoxComponent,
+  BriefcaseComponent,
+  CalendarComponent,
+  CameraComponent,
+  CastComponent,
+  CheckComponent,
+  ChromeComponent,
+  CircleComponent,
+  ClipboardComponent,
+  ClockComponent,
+  CloudComponent,
+  CodeComponent,
+  CodepenComponent,
+  CodesandboxComponent,
+  CoffeeComponent,
+  ColumnsComponent,
+  CommandComponent,
+  CompassComponent,
+  CopyComponent,
+  CpuComponent,
+  CreditCardComponent,
+  CropComponent,
+  CrosshairComponent,
+  DatabaseComponent,
+  DeleteComponent,
+  DiscComponent,
+  DivideComponent,
+  DollarSignComponent,
+  DownloadComponent,
+  DownloadCloudComponent,
+  DribbleComponent,
+  DropletComponent,
+  EditComponent,
+  ExternalLinkComponent,
+  EyeComponent,
+  FacebookComponent
+]
 
 @NgModule({
   imports: [
@@ -62,116 +147,10 @@ import { CopyComponent } from './components/copy/copy.component';
     BrowserAnimationsModule
   ],
   declarations: [
-    BaseComponent,
-    GariconsComponent,
-    RainComponent,
-    HeavyRainComponent,
-    OvercastComponent,
-    OvercastSunComponent,
-    ThunderStormComponent,
-    // UI
-    LayersComponent,
-    PrinterComponent,
-    MenuComponent,
-    MinimizeComponent,
-    RotateComponent,
-    ChevronComponent,
-    // Misc
-    CornerComponent,
-    MoonComponent,
-    SunComponent,
-    ActivityComponent,
-    AirplayComponent,
-    AlertComponent,
-    AlignComponent,
-    AnchorComponent,
-    ArrowComponent,
-    AtSignComponent,
-    ApertureComponent,
-    ArchiveComponent,
-    AwardComponent,
-    BarChartComponent,
-    BatteryComponent,
-    BellComponent,
-    BluetoothComponent,
-    BoldComponent,
-    BookComponent,
-    BookmarkComponent,
-    BoxComponent,
-    BriefcaseComponent,
-    CalendarComponent,
-    CameraComponent,
-    CastComponent,
-    CheckComponent,
-    ChromeComponent,
-    CircleComponent,
-    ClipboardComponent,
-    ClockComponent,
-    CloudComponent, 
-    CodeComponent,
-    CodepenComponent,
-    CodesandboxComponent,
-    CoffeeComponent,
-    ColumnsComponent,
-    CommandComponent,
-    CompassComponent,
-    CopyComponent
-    
+    ...gariconComponents
   ],
   exports: [
-    GariconsComponent,
-    RainComponent,
-    HeavyRainComponent,
-    OvercastComponent,
-    OvercastSunComponent,
-    ThunderStormComponent,
-    // UI
-    LayersComponent,
-    PrinterComponent,
-    MenuComponent,
-    MinimizeComponent,
-    RotateComponent,
-    ChevronComponent,
-    // Misc
-    CornerComponent,
-    MoonComponent,
-    SunComponent,
-    ActivityComponent,
-    AirplayComponent,
-    AlertComponent,
-    AlignComponent,
-    AnchorComponent,
-    ArrowComponent,
-    AtSignComponent,
-    ApertureComponent,
-    ArchiveComponent,
-    AwardComponent,
-    BarChartComponent,
-    BatteryComponent,
-    BellComponent,
-    BluetoothComponent,
-    BoldComponent,
-    BookComponent,
-    BookmarkComponent,
-    BoxComponent,
-    BriefcaseComponent,
-    CalendarComponent,
-    CameraComponent,
-    CastComponent,
-    CheckComponent,
-    ChromeComponent,
-    CircleComponent,
-    ClipboardComponent,
-    ClockComponent,
-    CloudComponent, 
-    CodeComponent,
-    CodepenComponent,
-    CodesandboxComponent,
-    CoffeeComponent,
-    ColumnsComponent,
-    CommandComponent,
-    CompassComponent,
-    CopyComponent
+    ...gariconComponents
   ]
 })
 export class GariconsModule { }

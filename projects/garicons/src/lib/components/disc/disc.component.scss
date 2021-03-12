@@ -1,0 +1,48 @@
+.ani-hover {
+    &:hover {
+        #disc {
+            animation-name: disc-ani;
+        }
+    }
+}
+
+.ani-onload {
+    #disc {
+        animation-name: disc-ani;
+    }
+}
+
+#disc {
+    transform-origin: center center;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+
+
+@keyframes disc-ani {
+    0% {
+        transform: scale(1);
+    }
+
+    30% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(1.2);
+ 
+    }
+}

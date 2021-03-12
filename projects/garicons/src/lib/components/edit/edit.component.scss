@@ -1,0 +1,91 @@
+.ani-hover {
+    &:hover {
+        #edit-pen,
+        #edit-line-pen,
+        #edit-box-pen {
+            animation-name: pen-draw;
+        }
+
+        #edit-line,
+        #edit-box {
+            animation-name: line-ani;
+        }
+
+       
+    }
+}
+
+.ani-onload {
+    #edit-pen,
+    #edit-line-pen,
+    #edit-box-pen {
+        animation-name: pen-draw;
+    }
+
+    #edit-line,
+    #edit-box {
+        animation-name: line-ani;
+    }
+
+}
+
+#edit-line {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+}
+
+#edit-box {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+}
+
+#edit-pen,
+#edit-line,
+#edit-line-pen,
+#edit-box,
+#edit-box-pen {
+    transform-origin: center center;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+@keyframes line-ani {
+    0% {
+        stroke-dashoffset: 100;
+    }
+
+    70% {
+        stroke-dashoffset: 100;
+    }
+
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes pen-draw {
+    35% {
+        transform: translateY(-20%) translateX(30%) rotate(-60deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    80% {
+        transform: rotate(0deg);
+    }
+}
