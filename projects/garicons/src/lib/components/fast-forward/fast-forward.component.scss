@@ -1,0 +1,61 @@
+.ani-hover {
+    &:hover {
+        #fast-forward-first-arrow {
+            animation-name: fast-forward-arrow-ani;
+            -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+        }
+
+        #fast-forward-second-arrow {
+            animation-name: fast-forward-arrow-ani;
+            -webkit-animation-delay: 0.05s;
+            animation-delay: 0.05s;
+        }
+
+       
+    }
+}
+
+.ani-onload {
+    #fast-forward-first-arrow {
+        animation-name: fast-forward-arrow-ani;
+        -webkit-animation-delay: 0s;
+        animation-delay: 0s;
+    }
+
+    #fast-forward-second-arrow {
+        animation-name: fast-forward-arrow-ani;
+        -webkit-animation-delay: 0.05s;
+        animation-delay: 0.05s;
+    }
+
+}
+
+
+
+#fast-forward-first-arrow,
+#fast-forward-second-arrow {
+    transform-origin: center center;
+    -webkit-animation-iteration-count: 2;
+    animation-iteration-count: 2;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-duration: 0.25s;
+    animation-duration: 0.25s;
+}
+
+@keyframes fast-forward-arrow-ani {
+    0% {
+        transform: translateX(0%);
+    }
+
+    70% {
+        transform: translateX(20%);
+    }
+}

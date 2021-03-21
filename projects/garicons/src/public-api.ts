@@ -75,6 +75,11 @@ export * from './lib/components/external-link/external-link.component';
 export * from './lib/components/eye/eye.component';
 export * from './lib/components/facebook/facebook.component';
 
+export * from './lib/components/fast-forward/fast-forward.component';
+export * from './lib/components/feather/feather.component';
+export * from './lib/components/figma/figma.component';
+export * from './lib/components/file/file.component';
+
 export * from './lib/garicons.service';
 export * from './lib/garicons.component';
 export * from './lib/garicons.module';
