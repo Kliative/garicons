@@ -62,3 +62,5 @@ Some icons have bespoke inputs, each of these will be elaborated on in the [docu
 6. Release-6 - [Notes](https://www.notion.so/Release-6-3341ea9512a6458baaefe1a67c90bb7a)
 8. Release-7 - [Notes](https://www.notion.so/Release-7-40780d9d662346ab87b3f5f1e60fdfa2)
 7. Release-8 - [Notes](https://www.notion.so/Release-8-5fc715a92e2e4f459bceb98dde4b09c2)
+7. Release-9 - [Notes](https://www.notion.so/Release-9-de5c50ba04eb461facae9c25c8d62c75)
+8. Release-10 - [Notes](https://www.notion.so/Release-10-e424b3601ad748ee9a6d359f4215e90e)

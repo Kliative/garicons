@@ -61,7 +61,7 @@ import { DatabaseComponent } from './components/database/database.component';
 import { DeleteComponent } from './components/delete/delete.component';
 import { DiscComponent } from './components/disc/disc.component';
 import { DivideComponent } from './components/divide/divide.component';
-import { DollarSignComponent, DownloadComponent, DownloadCloudComponent, DribbleComponent, DropletComponent } from '../public-api';
+import { DollarSignComponent, DownloadComponent, DownloadCloudComponent, DribbleComponent, DropletComponent, FastForwardComponent, FeatherComponent, FigmaComponent, FileComponent } from '../public-api';
 import { EditComponent } from './components/edit/edit.component';
 import { ExternalLinkComponent } from './components/external-link/external-link.component';
 import { EyeComponent } from './components/eye/eye.component';
@@ -138,7 +138,11 @@ let gariconComponents = [
   EditComponent,
   ExternalLinkComponent,
   EyeComponent,
-  FacebookComponent
+  FacebookComponent,
+  FastForwardComponent,
+  FeatherComponent,
+  FigmaComponent,
+  FileComponent
 ]
 
 @NgModule({

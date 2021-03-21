@@ -1,0 +1,68 @@
+.ani-hover {
+    &:hover {
+        #file-minus,
+        #file-plus {
+            animation-name: filetype-ani;
+        }
+        #file-text {
+            animation-name: filetype-text-ani;
+        }
+    }
+}
+
+.ani-onload {
+    #file-minus,
+    #file-plus {
+        animation-name: filetype-ani;
+    }
+    #file-text {
+        animation-name: filetype-text-ani;
+    }
+}
+
+#file-text {
+    stroke-dasharray: 10;
+    stroke-dashoffset: 20;
+}
+#file-minus,
+#file-plus,
+#file-text {
+    transform-origin: center center;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+@keyframes filetype-ani {
+    0% {
+        transform: scale(1);
+    }
+
+    30% {
+        transform: scale(0.9);
+    }
+
+    80% {
+        transform: scale(1.2);
+    }
+}
+@keyframes filetype-text-ani {
+    0% {
+        stroke-dashoffset: 10;
+    }
+
+    100% {
+        stroke-dashoffset: 20;
+    }
+}
