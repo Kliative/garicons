@@ -9,7 +9,7 @@
     "tslib": "^1.10.0"
   },
   "devDependencies": {
-    "ng-packagr": "^9.1.5"
+    "ng-packagr": "^10.1.1"
   },
   "description": "Open source animated SVG feather icons",
   "main": "karma.conf.js",
